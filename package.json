@@ -1,10 +1,9 @@
 {
-  "name": "rwa-tokenization-platform",
+  "name": "Cirrqriq-Network",
   "version": "1.0.0",
   "private": true,
-  "description": "پلتفرم تخصصی توکنایز دارایی‌های واقعی (RWA) - طراحی و توسعه توسط MiroTeam",
-  "author": "MiroTeam <https://miroteam.ir>",
-  "homepage": "https://rwa-labs.ir",
+  "description": "Real Asset Tokenization (RWA) Platform",
+  "author": "Cirrariq Team",
   "scripts": {
     "dev": "next dev --turbopack",
     "build": "next build",
