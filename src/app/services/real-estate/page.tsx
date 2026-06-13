@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Building2, ArrowRight, CheckCircle, Shield, Zap, Globe, Users, BarChart3 } from 'lucide-react'
+import { Building2, CheckCircle, Shield, Zap, Globe, Users, BarChart3 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Real Estate Tokenization | Convert Buildings to Digital Tokens | RWA Labs',

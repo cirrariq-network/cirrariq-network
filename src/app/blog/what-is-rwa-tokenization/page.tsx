@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Calendar, Clock, User, ArrowRight, CheckCircle, ExternalLink } from 'lucide-react'
+import { Calendar, Clock, User, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'What Is Real-World Asset Tokenization? A Complete Guide for Beginners | RWA Labs',
@@ -163,7 +163,7 @@ export default function BlogArticlePage() {
                 <section id="introduction" className="mb-12">
                   <h2 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h2>
                   <p className="text-lg text-gray-700 leading-relaxed mb-6">
-                    In today's world, blockchain technology has created new opportunities for investment and ownership of assets. 
+                    In today&apos;s world, blockchain technology has created new opportunities for investment and ownership of assets. 
                     One of the most important of these opportunities is Real-World Asset Tokenization (RWA), which enables 
                     the conversion of any physical asset into a tradeable digital token.
                   </p>

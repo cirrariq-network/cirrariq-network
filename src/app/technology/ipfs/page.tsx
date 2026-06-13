@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Globe, CheckCircle, ArrowRight, ExternalLink, Database, Shield, Zap, Cloud } from 'lucide-react'
+import { Globe, CheckCircle, ArrowRight, ExternalLink, Database, Shield, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'IPFS - InterPlanetary File System | RWA Labs',

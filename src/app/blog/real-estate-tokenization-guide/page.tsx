@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Calendar, Clock, User, ArrowRight, CheckCircle, ExternalLink } from 'lucide-react'
+import { Calendar, Clock, User, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'How to Tokenize a Building? Complete Guide | RWA Labs',

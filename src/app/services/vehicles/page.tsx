@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Car, ArrowRight, CheckCircle, Shield, Zap, Globe, Users, BarChart3, TrendingUp, DollarSign } from 'lucide-react'
+import { Car, CheckCircle, Shield, Globe, Users, BarChart3, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Vehicles & Machinery Tokenization | Luxury Cars, Heavy Machinery | RWA Labs',

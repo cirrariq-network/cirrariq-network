@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Calendar, Clock, User, ArrowRight, CheckCircle } from 'lucide-react'
+import { Calendar, Clock, User } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'ERC-20 vs ERC-3643: Which Standard Is Best for RWA? | RWA Labs',

@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Code, CheckCircle, ArrowRight, ExternalLink, Zap, Shield, Database, Globe } from 'lucide-react'
+import { Code, CheckCircle, ArrowRight, ExternalLink, Zap, Shield, Database } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Solidity - Smart contract programming language | RWA Labs',

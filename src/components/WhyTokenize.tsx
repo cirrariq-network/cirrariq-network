@@ -1,7 +1,6 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
 import { DollarSign, Globe, Shield, Zap, Users, BarChart3 } from 'lucide-react'
 import CalendlyButton from './CalendlyButton'
 

@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Lock, CheckCircle, ArrowRight, ExternalLink, Shield, Users, Key, AlertTriangle } from 'lucide-react'
+import { Lock, CheckCircle, ArrowRight, ExternalLink, Shield, Users, Key } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Multi-Signature - Multi-signature Wallet | RWA Labs',

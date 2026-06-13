@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Gem, ArrowRight, CheckCircle, Shield, Zap, Globe, Users, BarChart3, TrendingUp, DollarSign } from 'lucide-react'
+import { Gem, CheckCircle, Shield, Globe, Users, BarChart3, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Mining & Metals Tokenization | Gold, Silver, Copper, Iron | RWA Labs',

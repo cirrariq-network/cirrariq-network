@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Shield, CheckCircle, ArrowRight, ExternalLink, Zap, Database, Globe, Lock } from 'lucide-react'
+import { Shield, CheckCircle, ArrowRight, ExternalLink, Zap, Database, Lock } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'ERC-3643 - Standard Securities Standard Digital | RWA Labs',

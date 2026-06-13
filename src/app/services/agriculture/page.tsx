@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Wheat, ArrowRight, CheckCircle, Shield, Zap, Globe, Users, BarChart3, TrendingUp, DollarSign } from 'lucide-react'
+import { Wheat, ArrowRight, CheckCircle, Shield, Globe, Users, BarChart3, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Agricultural Products Tokenization | Saffron, Pistachio, Rice, Livestock | RWA Labs',

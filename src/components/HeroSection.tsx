@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion'
 import Link from 'next/link'
-import { ArrowRight, Shield, Zap, Globe } from 'lucide-react'
+import { Shield, Zap, Globe } from 'lucide-react'
 import CalendlyButton from './CalendlyButton'
 
 export default function HeroSection() {

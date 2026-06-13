@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { Phone, Clock, ExternalLink } from 'lucide-react'
+import { Phone, ExternalLink } from 'lucide-react'
 import CalendlyButton from './CalendlyButton'
 
 const footerLinks = {

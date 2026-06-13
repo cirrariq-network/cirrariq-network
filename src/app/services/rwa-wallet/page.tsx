@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { Wallet, ArrowRight, CheckCircle, Shield, Zap, Globe, Users, BarChart3, TrendingUp, DollarSign } from 'lucide-react'
+import { Wallet, CheckCircle, Shield, Zap, Globe, Users, BarChart3 } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Blockchain RWA Wallet | Dedicated Wallet for Real-World Asset Tokens | RWA Labs',

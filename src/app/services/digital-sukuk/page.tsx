@@ -1,6 +1,6 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
-import { FileText, ArrowRight, CheckCircle, Shield, Zap, Globe, Users, BarChart3, TrendingUp, DollarSign } from 'lucide-react'
+import { FileText, CheckCircle, Shield, Globe, Users, BarChart3, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Digital Sukuk & Securities | Islamic Securities, Income Sukuk | RWA Labs',

@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Zap, CheckCircle, ArrowRight, ExternalLink, Code, Shield, Database, RefreshCw } from 'lucide-react'
+import { Zap, CheckCircle, ArrowRight, ExternalLink, Shield, Database, RefreshCw } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'Proxy Pattern - Smart Contract Upgrade Pattern | RWA Labs',

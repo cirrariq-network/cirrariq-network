@@ -2,7 +2,6 @@
 
 import { motion } from 'framer-motion'
 import { Phone, Clock } from 'lucide-react'
-import CalendlyButton from './CalendlyButton'
 
 export default function ContactSection() {
   return (

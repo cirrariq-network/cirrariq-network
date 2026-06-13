@@ -1,7 +1,7 @@
 import { Metadata } from 'next'
 import Link from 'next/link'
 import Image from 'next/image'
-import { Database, CheckCircle, ArrowRight, ExternalLink, Zap, Shield, Globe, Code } from 'lucide-react'
+import { Database, CheckCircle, ArrowRight, ExternalLink, Zap, Shield, Globe } from 'lucide-react'
 
 export const metadata: Metadata = {
   title: 'ERC-20 - Fungible Token Standard | RWA Labs',
