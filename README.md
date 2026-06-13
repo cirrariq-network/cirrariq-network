@@ -7,154 +7,174 @@
 ![TypeScript](https://img.shields.io/badge/TypeScript-5.0-3178c6?style=flat-square&logo=typescript)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind%20CSS-4.0-06b6d4?style=flat-square&logo=tailwind-css)
 
-**پلتفرم تخصصی توکنایز دارایی‌های واقعی (RWA)**
+**A Specialized Platform for Real-World Asset (RWA) Tokenization**
 
-🌐 **وب‌سایت**: [https://rwa-labs.ir](https://rwa-labs.ir)
-
-[![Deploy Status](https://github.com/masihtehrani/rwa-tokenization-platform/actions/workflows/deploy.yml/badge.svg)](https://github.com/masihtehrani/rwa-tokenization-platform/actions/workflows/deploy.yml)
+🌐 **Website:** https://cirrariq.finance
 
 </div>
 
-## درباره پروژه
+---
 
-RWA Labs یک پلتفرم پیشرفته برای توکنایز دارایی‌های واقعی است که امکان تبدیل دارایی‌های فیزیکی به توکن‌های دیجیتال قابل‌معامله را فراهم می‌کند.
+## About the Project
 
-### خدمات اصلی
+RWA Labs is an advanced platform for the tokenization of real-world assets, enabling the transformation of physical assets into tradable digital tokens.
 
-- **توکنایز املاک و مستغلات**: ساختمان‌های مسکونی، تجاری و پروژه‌های عمرانی
-- **توکنایز دارایی‌های معدنی**: طلا، نقره، مس، آهن و سنگ‌های قیمتی  
-- **توکنایز محصولات کشاورزی**: زعفران، پسته، برنج و دامداری
-- **توکنایز خودرو و ماشین‌آلات**: خودروهای لوکس و ماشین‌آلات سنگین
-- **صکوک دیجیتال**: اوراق اسلامی و اوراق بهادار درآمدزا
-- **کیف‌پول تخصصی**: مدیریت توکن‌های دارایی واقعی
+### Core Services
 
-### ویژگی‌های فنی
+- **Real Estate Tokenization:** Residential buildings, commercial properties, and construction projects
+- **Mining Asset Tokenization:** Gold, silver, copper, iron, and precious stones
+- **Agricultural Product Tokenization:** Saffron, pistachios, rice, and livestock assets
+- **Vehicle and Machinery Tokenization:** Luxury vehicles and heavy machinery
+- **Digital Sukuk:** Islamic financial instruments and income-generating securities
+- **Specialized Wallet:** Management of real-world asset tokens
 
-- **قراردادهای هوشمند امن**: استفاده از استانداردهای ERC-20 و ERC-3643
-- **کیف‌پول چند امضایی**: امنیت بالا برای مدیریت دارایی‌ها
-- **قیمت‌گذاری زنده**: اتصال به اوراکل‌های معتبر
-- **ذخیره‌سازی غیرمتمرکز**: استفاده از IPFS
-- **قابلیت ارتقا**: الگوی Proxy Pattern برای به‌روزرسانی قراردادها
+### Technical Features
 
-## تکنولوژی‌ها
+- **Secure Smart Contracts:** Built using ERC-20 and ERC-3643 standards
+- **Multi-Signature Wallet:** Enhanced security for asset management
+- **Live Pricing:** Integration with trusted oracle services
+- **Decentralized Storage:** Powered by IPFS
+- **Upgradeable Contracts:** Proxy Pattern architecture for contract upgrades
+
+---
+
+## Technologies
 
 ### Frontend
-- Next.js 15 با App Router
-- TypeScript برای type safety
-- Tailwind CSS برای استایل‌دهی
-- Framer Motion برای انیمیشن‌ها
+
+- Next.js 15 with App Router
+- TypeScript for type safety
+- Tailwind CSS for styling
+- Framer Motion for animations
 
 ### Blockchain
-- Solidity برای قراردادهای هوشمند
-- استانداردهای ERC-20 و ERC-3643
+
+- Solidity for smart contract development
+- ERC-20 and ERC-3643 standards
 - Multi-Signature Wallet
-- Proxy Pattern
+- Proxy Pattern architecture
 
 ### Infrastructure
-- GitHub Pages برای hosting
-- IPFS برای ذخیره‌سازی
-- GitHub Actions برای CI/CD
 
-## نصب و راه‌اندازی
+- GitHub Pages for hosting
+- IPFS for decentralized storage
+- GitHub Actions for CI/CD automation
 
-### پیش‌نیازها
-- Node.js 18.x یا بالاتر
-- npm یا yarn
+---
 
-### مراحل نصب
+## Installation and Setup
 
-1. **Clone کردن پروژه**
+### Prerequisites
+
+- Node.js 18.x or later
+- npm or yarn
+
+### Installation
+
 ```bash
-git clone https://github.com/masihtehrani/rwa-tokenization-platform.git
-cd rwa-tokenization-platform
-```
-
-2. **نصب وابستگی‌ها**
-```bash
+git clone https://github.com/cirrariq-network/cirrariq-network.git
+cd cirrariq-network
 npm install
-```
-
-3. **اجرای پروژه**
-```bash
 npm run dev
 ```
 
-4. **باز کردن مرورگر**
-```
+Open your browser and navigate to:
+
+```text
 http://localhost:3000
 ```
 
-### Scripts
+---
+
+## Scripts
 
 ```bash
-npm run dev          # اجرای development server
-npm run build        # ساخت production build
-npm run start        # اجرای production server
-npm run lint         # اجرای ESLint
+npm run dev      # Start the development server
+npm run build    # Build for production
+npm run start    # Start the production server
+npm run lint     # Run ESLint
 ```
 
-## ساختار پروژه
+---
 
-```
+## Project Structure
+
+```text
 src/
-├── app/                    # Next.js App Router
-│   ├── services/          # صفحات خدمات
-│   ├── portfolio/         # صفحه پورتفولیو
-│   ├── about/             # صفحه درباره ما
-│   ├── contact/           # صفحه تماس
-│   ├── blog/              # صفحه بلاگ
-│   ├── technology/        # صفحه تکنولوژی
-│   └── layout.tsx         # Layout اصلی
-└── components/            # کامپوننت‌های React
-    ├── Header.tsx         # هدر سایت
-    ├── Footer.tsx         # فوتر سایت
-    ├── HeroSection.tsx    # بخش Hero
+├── app/
+│   ├── services/
+│   ├── portfolio/
+│   ├── about/
+│   ├── contact/
+│   ├── blog/
+│   ├── technology/
+│   └── layout.tsx
+└── components/
+    ├── Header.tsx
+    ├── Footer.tsx
+    ├── HeroSection.tsx
     └── ...
 ```
 
-## صفحات
+---
 
-### صفحات اصلی
-- **صفحه اصلی** (`/`) - معرفی پلتفرم
-- **خدمات** (`/services`) - لیست خدمات
-- **پورتفولیو** (`/portfolio`) - نمونه‌کارها
-- **درباره ما** (`/about`) - معرفی تیم
-- **تماس** (`/contact`) - اطلاعات تماس
-- **تکنولوژی** (`/technology`) - معرفی تکنولوژی‌ها
-- **بلاگ** (`/blog`) - مقالات
+## Pages
 
-### صفحات خدمات
-- **توکنایز املاک** (`/services/real-estate`)
-- **توکنایز دارایی‌های معدنی** (`/services/mining-metals`)
-- **توکنایز محصولات کشاورزی** (`/services/agriculture`)
-- **توکنایز خودرو** (`/services/vehicles`)
-- **صکوک دیجیتال** (`/services/digital-sukuk`)
-- **کیف‌پول RWA** (`/services/rwa-wallet`)
+### Main Pages
 
-## مشارکت
+- Home (`/`)
+- Services (`/services`)
+- Portfolio (`/portfolio`)
+- About Us (`/about`)
+- Contact (`/contact`)
+- Technology (`/technology`)
+- Blog (`/blog`)
 
-برای مشارکت در پروژه:
+### Service Pages
 
-1. Fork کنید
-2. Branch جدید ایجاد کنید (`git checkout -b feature/new-feature`)
-3. تغییرات خود را commit کنید (`git commit -m 'Add new feature'`)
-4. Push کنید (`git push origin feature/new-feature`)
-5. Pull Request ایجاد کنید
+- Real Estate Tokenization (`/services/real-estate`)
+- Mining Assets Tokenization (`/services/mining-metals`)
+- Agricultural Products Tokenization (`/services/agriculture`)
+- Vehicle Tokenization (`/services/vehicles`)
+- Digital Sukuk (`/services/digital-sukuk`)
+- RWA Wallet (`/services/rwa-wallet`)
 
-## مجوز
+---
 
-این پروژه تحت مجوز [MIT](LICENSE) منتشر شده است.
+## Contributing
 
-## تماس
+1. Fork the repository.
+2. Create a branch:
+   ```bash
+   git checkout -b feature/new-feature
+   ```
+3. Commit your changes:
+   ```bash
+   git commit -m "Add new feature"
+   ```
+4. Push your branch:
+   ```bash
+   git push origin feature/new-feature
+   ```
+5. Open a Pull Request.
 
-- **وب‌سایت**: [rwa-labs.ir](https://rwa-labs.ir)
-- **ایمیل**: info@rwa-labs.ir
-- **تلگرام**: [@rwa_labs](https://t.me/rwa_labs)
+---
+
+## License
+
+This project is released under the MIT License.
+
+---
+
+## Contact
+
+- Website: https://cirrariq.finance
+- Email: info@cirrariq.finance
 
 ---
 
 <div align="center">
 
-**طراحی و توسعه توسط [MiroTeam](https://miroteam.ir/)**
+**Designed and Developed by Cirrariq Team**
 
 </div>
