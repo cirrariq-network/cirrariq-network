@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Database, CheckCircle, ArrowRight, ExternalLink, Zap, Shield, Globe } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'ERC-20 - Fungible Token Standard | RWA Labs',
+  title: 'ERC-20 - Fungible Token Standard | Cirrariq',
   description: 'Complete guide to the ERC-20 standard for fungible tokens. Features, benefits, examples, and implementation.',
   keywords: 'ERC-20,token standard,fungible token,fungible token,ethereum,blockchain,smart contract',
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Complete guide to the ERC-20 standard for fungible tokens',
     type: 'article',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
     images: [
       {
         url: '/images/technology/erc-20-deep-dive.jpg',

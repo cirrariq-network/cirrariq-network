@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Calendar, Clock, User } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Agricultural Product Tokenization: Opportunities and Challenges | RWA Labs',
+  title: 'Agricultural Product Tokenization: Opportunities and Challenges | Cirrariq',
   description: 'Complete guide to agricultural product tokenization. How to tokenize saffron, pistachio, rice, and livestock using blockchain technology.',
   keywords: 'agricultural tokenization,saffron token,pistachio token,rice token,sheep token,digital agriculture',
   openGraph: {
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     description: 'A complete comparison of ERC-20 and ERC-3643 standards for real-world asset tokenization.',
     type: 'article',
     locale: 'en_US',
-    siteName: 'RWA Labs',
-    authors: ['RWA Labs'],
+    siteName: 'Cirrariq',
+    authors: ['Cirrariq'],
     publishedTime: '2024-01-10T10:00:00Z',
   },
 }
@@ -52,7 +52,7 @@ export default function ERC20vsERC3643Page() {
             <div className="flex items-center space-x-6 text-purple-100">
               <div className="flex items-center">
                 <User className="w-5 h-5 mr-2" />
-                RWA Labs
+                Cirrariq
               </div>
               <div className="flex items-center">
                 <Calendar className="w-5 h-5 mr-2" />

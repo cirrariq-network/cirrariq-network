@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Wheat, ArrowRight, CheckCircle, Shield, Globe, Users, BarChart3, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Agricultural Products Tokenization | Saffron, Pistachio, Rice, Livestock | RWA Labs',
+  title: 'Agricultural Products Tokenization | Saffron, Pistachio, Rice, Livestock | Cirrariq',
   description: 'Agricultural Products Tokenization including saffron, pistachio, rice, livestock. physical backing, live pricing, 24/7 trading.',
   keywords: 'saffron tokenization,pistachio token,rice token,sheep token,digital agriculture,digital livestock,RWA agriculture',
 }

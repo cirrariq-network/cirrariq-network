@@ -3,8 +3,8 @@ import Link from 'next/link'
 import { Code, Shield, Zap, Globe, Database, Lock, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Technologies Used | RWA Labs - Advanced Blockchain Technology',
-  description: 'Advanced blockchain technologies, smart contracts, token standards and security on the RWA Labs platform.',
+  title: 'Technologies Used | Cirrariq - Advanced Blockchain Technology',
+  description: 'Advanced blockchain technologies, smart contracts, token standards and security on the Cirrariq platform.',
   keywords: 'blockchain technology,smart contract,Solidity,ERC-20,ERC-3643,Proxy Pattern,Multi-Sig,blockchain security',
 }
 
@@ -52,7 +52,7 @@ export default function TechnologyPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900 py-20">
+      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
         <div className="container mx-auto px-4 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Advanced Technologies</h1>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
@@ -107,7 +107,7 @@ export default function TechnologyPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {securityFeatures.map((f, i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
                   <f.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{f.title}</h3>
@@ -153,7 +153,7 @@ export default function TechnologyPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Have Questions About Our Technologies?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Our technical team is ready to answer your specialized questions.</p>

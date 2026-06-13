@@ -5,7 +5,7 @@ import { Phone, Clock } from 'lucide-react'
 
 export default function ContactSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900">
+    <section className="py-20 bg-gradient-to-br from-[#03050f] via-blue-950 to-cyan-950">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -48,7 +48,7 @@ export default function ContactSection() {
                 </div>
                 <div>
                   <h4 className="text-white font-semibold">Phone</h4>
-                  <p className="text-blue-100">+1-800-RWA-LABS</p>
+                  <p className="text-blue-100">+1-800-CIRRARIQ</p>
                 </div>
               </div>
 

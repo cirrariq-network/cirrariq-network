@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Globe, CheckCircle, ArrowRight, ExternalLink, Database, Shield, Zap } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'IPFS - InterPlanetary File System | RWA Labs',
+  title: 'IPFS - InterPlanetary File System | Cirrariq',
   description: 'Complete guide to IPFS for decentralized data storage. Features, benefits, usage, and implementation.',
   keywords: 'IPFS,decentralized storage,InterPlanetary File System,blockchain,file system,distributed',
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Complete guide to IPFS for decentralized data storage',
     type: 'article',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
     images: [
       {
         url: '/images/technology/ipfs-storage.jpg',

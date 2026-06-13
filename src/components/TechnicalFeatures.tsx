@@ -23,7 +23,7 @@ const features = [
     title: 'Token Pause Capability',
     description: 'Ability to temporarily halt token transactions when needed.',
     details: ['Emergency Stop', 'Maintenance Mode', 'Regulatory Compliance'],
-    color: 'from-orange-500 to-yellow-500'
+    color: 'from-blue-500 to-cyan-400'
   },
   {
     icon: Users,
@@ -111,26 +111,26 @@ export default function TechnicalFeatures() {
           viewport={{ once: true }}
           className="mt-16"
         >
-          <div className="bg-gradient-to-r from-orange-600 to-red-600 rounded-3xl p-12 text-white">
+          <div className="bg-gradient-to-r from-blue-600 to-red-600 rounded-3xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-6 text-center">
               Platform Technical Specifications
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
               <div className="text-center">
                 <div className="text-2xl font-bold mb-2">ERC-20</div>
-                <div className="text-orange-100">Token Standard</div>
+                <div className="text-blue-100">Token Standard</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold mb-2">ERC-3643</div>
-                <div className="text-orange-100">Securities Standard</div>
+                <div className="text-blue-100">Securities Standard</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold mb-2">Proxy Pattern</div>
-                <div className="text-orange-100">Upgradeability</div>
+                <div className="text-blue-100">Upgradeability</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold mb-2">Multi-Sig</div>
-                <div className="text-orange-100">High Security</div>
+                <div className="text-blue-100">High Security</div>
               </div>
             </div>
           </div>

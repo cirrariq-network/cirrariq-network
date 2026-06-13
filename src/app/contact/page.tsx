@@ -3,15 +3,15 @@ import { Phone, Clock } from 'lucide-react'
 import CalendlyButton from '@/components/CalendlyButton'
 
 export const metadata: Metadata = {
-  title: 'Contact RWA Labs | Free Tokenization Consultation | 24/7 Support',
-  description: 'Contact the RWA Labs team for a free real-world asset tokenization consultation. Support and guidance available.',
-  keywords: 'contact RWA Labs,free tokenization consultation,tokenization support,contact blockchain team,tokenization guidance',
+  title: 'Contact Cirrariq | Free Tokenization Consultation | 24/7 Support',
+  description: 'Contact the Cirrariq team for a free real-world asset tokenization consultation. Support and guidance available.',
+  keywords: 'contact Cirrariq,free tokenization consultation,tokenization support,contact blockchain team,tokenization guidance',
   openGraph: {
-    title: 'Contact RWA Labs | Free Tokenization Consultation',
-    description: 'Contact the RWA Labs team for a free real-world asset tokenization consultation.',
+    title: 'Contact Cirrariq | Free Tokenization Consultation',
+    description: 'Contact the Cirrariq team for a free real-world asset tokenization consultation.',
     type: 'website',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
   },
 }
 
@@ -38,7 +38,7 @@ export default function ContactPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900 py-20">
+      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Contact Us</h1>
@@ -47,14 +47,14 @@ export default function ContactPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center mt-8">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white flex items-center gap-4">
-                <Phone className="w-8 h-8 text-yellow-400 flex-shrink-0" />
+                <Phone className="w-8 h-8 text-cyan-400 flex-shrink-0" />
                 <div className="text-left">
                   <div className="font-semibold">Phone</div>
-                  <div className="text-blue-100">+1-800-RWA-LABS</div>
+                  <div className="text-blue-100">+1-800-CIRRARIQ</div>
                 </div>
               </div>
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 text-white flex items-center gap-4">
-                <Clock className="w-8 h-8 text-yellow-400 flex-shrink-0" />
+                <Clock className="w-8 h-8 text-cyan-400 flex-shrink-0" />
                 <div className="text-left">
                   <div className="font-semibold">Online Consultation</div>
                   <CalendlyButton text="Schedule a Meeting" variant="secondary" size="sm" className="mt-2" />
@@ -86,7 +86,7 @@ export default function ContactPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Start Your Tokenization Project?

@@ -78,7 +78,7 @@ export default function WhyTokenize() {
         >
           {stats.map((stat, index) => (
             <div key={index} className="text-center">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-2xl p-6 mb-4">
+              <div className="bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 text-white rounded-2xl p-6 mb-4">
                 <div className="text-3xl md:text-4xl font-bold">{stat.number}</div>
               </div>
               <div className="text-gray-600 font-semibold">{stat.label}</div>
@@ -98,7 +98,7 @@ export default function WhyTokenize() {
               className="group"
             >
               <div className="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1 border border-gray-100 h-full">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
                   <benefit.icon className="w-8 h-8 text-white" />
                 </div>
                 

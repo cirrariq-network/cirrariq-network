@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Car, CheckCircle, Shield, Globe, Users, BarChart3, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Vehicles & Machinery Tokenization | Luxury Cars, Heavy Machinery | RWA Labs',
+  title: 'Vehicles & Machinery Tokenization | Luxury Cars, Heavy Machinery | Cirrariq',
   description: 'Tokenize luxury cars, heavy machinery and industrial equipment. physical backing, live pricing, 24/7 trading.',
   keywords: 'vehicle tokenization,car token,digital vehicle,heavy machinery,industrial equipment,RWA vehicles',
 }

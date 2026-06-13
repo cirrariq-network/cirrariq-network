@@ -4,16 +4,16 @@ import Image from 'next/image'
 import { Calendar, Clock, User, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'How to Tokenize a Building? Complete Guide | RWA Labs',
-  description: 'Comprehensive guide to real estate tokenization: practical steps, laws, costs, and successful examples. Free consultation with RWA Labs experts.',
+  title: 'How to Tokenize a Building? Complete Guide | Cirrariq',
+  description: 'Comprehensive guide to real estate tokenization: practical steps, laws, costs, and successful examples. Free consultation with Cirrariq experts.',
   keywords: 'real estate tokenization,building tokenization,real estate tokenization guide,property token,digital real estate',
   openGraph: {
     title: 'How to Tokenize a Building? Complete Guide',
     description: 'Comprehensive guide to real estate tokenization: practical steps, laws, costs, and successful examples.',
     type: 'article',
     locale: 'en_US',
-    siteName: 'RWA Labs',
-    authors: ['RWA Labs'],
+    siteName: 'Cirrariq',
+    authors: ['Cirrariq'],
     publishedTime: '2024-01-12T10:00:00Z',
     modifiedTime: '2024-01-12T10:00:00Z',
   },
@@ -142,7 +142,7 @@ export default function RealEstateTokenizationGuidePage() {
             <div className="flex items-center space-x-6 text-blue-100">
               <div className="flex items-center">
                 <User className="w-5 h-5 mr-2" />
-                RWA Labs
+                Cirrariq
               </div>
               <div className="flex items-center">
                 <Calendar className="w-5 h-5 mr-2" />
@@ -253,13 +253,13 @@ export default function RealEstateTokenizationGuidePage() {
               </p>
               <p className="text-lg text-gray-700 leading-relaxed">
                 If you have a property you want to tokenize, or as an investor are looking for 
-                new opportunities in the real estate market, contact our expert team at RWA Labs.
+                new opportunities in the real estate market, contact our expert team at Cirrariq.
               </p>
             </section>
           </article>
 
           {/* CTA Section */}
-          <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center mt-12">
+          <div className="bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 rounded-2xl p-8 text-white text-center mt-12">
             <h3 className="text-2xl font-bold mb-4">Ready to Tokenize Your Real Estate?</h3>
             <p className="text-blue-100 mb-6">With our free consultation, find the best solution for your property.</p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">

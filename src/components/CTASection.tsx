@@ -7,7 +7,7 @@ import CalendlyButton from './CalendlyButton'
 
 export default function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-yellow-500 to-orange-600">
+    <section className="py-20 bg-gradient-to-r from-cyan-400 to-blue-600">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -19,7 +19,7 @@ export default function CTASection() {
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
             Ready to Tokenize Your Assets?
           </h2>
-          <p className="text-xl text-yellow-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-xl text-cyan-100 mb-8 max-w-3xl mx-auto">
             With our consultation, find the right tokenization solution for your assets.
           </p>
           
@@ -28,11 +28,11 @@ export default function CTASection() {
               text="Get Free Consultation" 
               variant="secondary" 
               size="lg" 
-              className="bg-white text-orange-600 hover:bg-gray-100"
+              className="bg-white text-blue-600 hover:bg-gray-100"
             />
             <Link 
               href="/portfolio"
-              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-orange-600 transition-all duration-300"
+              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
             >
               View Portfolio
             </Link>
@@ -50,7 +50,7 @@ export default function CTASection() {
             >
               <Phone className="w-8 h-8 mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-semibold mb-2">Phone</h3>
-              <p className="text-sm text-yellow-100">+1-800-RWA-LABS</p>
+              <p className="text-sm text-cyan-100">+1-800-CIRRARIQ</p>
             </motion.a>
 
             <motion.div
@@ -62,7 +62,7 @@ export default function CTASection() {
             >
               <Clock className="w-8 h-8 mx-auto mb-4 group-hover:scale-110 transition-transform" />
               <h3 className="font-semibold mb-2">Schedule a Meeting</h3>
-              <p className="text-sm text-yellow-100 mb-4">Online Consultation</p>
+              <p className="text-sm text-cyan-100 mb-4">Online Consultation</p>
               <CalendlyButton 
                 text="Book a Time" 
                 variant="secondary" 
@@ -80,10 +80,10 @@ export default function CTASection() {
             viewport={{ once: true }}
             className="mt-12 text-center"
           >
-            <div className="text-yellow-100 text-sm mb-4">
+            <div className="text-cyan-100 text-sm mb-4">
               Over 47 assets successfully tokenized
             </div>
-            <div className="flex justify-center items-center space-x-8 text-yellow-200 text-sm">
+            <div className="flex justify-center items-center space-x-8 text-cyan-200 text-sm">
               <span>✓ High Security</span>
               <span>✓ Fast Execution</span>
               <span>✓ 24/7 Support</span>

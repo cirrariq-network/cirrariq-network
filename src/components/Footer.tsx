@@ -1,4 +1,5 @@
 import Link from 'next/link'
+import Image from 'next/image'
 import { Phone, ExternalLink } from 'lucide-react'
 import CalendlyButton from './CalendlyButton'
 
@@ -37,13 +38,17 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Company Info */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-r from-blue-600 to-purple-600 rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">RWA</span>
-              </div>
+            <div className="flex items-center space-x-3 mb-4">
+              <Image
+                src="/images/icon-dark.png"
+                alt="Cirrariq logo"
+                width={40}
+                height={40}
+                className="w-10 h-10 object-contain"
+              />
               <div>
-                <div className="text-xl font-bold">Tokenization</div>
-                <div className="text-sm text-gray-400">Real-World Assets</div>
+                <div className="text-xl font-bold tracking-wide">CIRRARIQ</div>
+                <div className="text-xs text-gray-400 tracking-wider uppercase">Infrastructure for Real-World Value</div>
               </div>
             </div>
             <p className="text-gray-400 mb-6 leading-relaxed">
@@ -56,7 +61,7 @@ export default function Footer() {
                 className="flex items-center text-gray-400 hover:text-white transition-colors duration-300"
               >
                 <Phone className="w-5 h-5 mr-3" />
-                Phone: +1-800-RWA-LABS
+                Phone: +1-800-CIRRARIQ
               </a>
               <CalendlyButton 
                 text="Schedule a Meeting" 
@@ -133,7 +138,7 @@ export default function Footer() {
         <div className="border-t border-gray-800 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 RWA Labs - All rights reserved
+              © 2024 Cirrariq - All rights reserved
             </div>
             <div className="flex items-center space-x-6 text-sm text-gray-400">
               <span>Designed & developed by</span>

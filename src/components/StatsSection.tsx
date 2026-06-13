@@ -9,7 +9,7 @@ const stats = [
     number: '2023',
     label: 'Founded',
     description: 'Started operations in the real-world asset tokenization space.',
-    color: 'from-yellow-500 to-orange-500'
+    color: 'from-cyan-400 to-blue-500'
   },
   {
     icon: Building2,
@@ -36,7 +36,7 @@ const stats = [
 
 export default function StatsSection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900">
+    <section className="py-20 bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950">
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -94,19 +94,19 @@ export default function StatsSection() {
         >
           <div className="bg-white/5 backdrop-blur-sm rounded-2xl p-8 border border-white/10 max-w-4xl mx-auto">
             <h3 className="text-2xl font-bold text-white mb-4">
-              Why RWA Labs?
+              Why Cirrariq?
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-gray-300">
               <div>
-                <div className="text-yellow-400 font-semibold mb-2">✓ High Security</div>
+                <div className="text-cyan-400 font-semibold mb-2">✓ High Security</div>
                 <div className="text-sm">Secure smart contracts and international standards</div>
               </div>
               <div>
-                <div className="text-yellow-400 font-semibold mb-2">✓ Fast Execution</div>
+                <div className="text-cyan-400 font-semibold mb-2">✓ Fast Execution</div>
                 <div className="text-sm">Rapid tokenization with minimal fees</div>
               </div>
               <div>
-                <div className="text-yellow-400 font-semibold mb-2">✓ 24/7 Support</div>
+                <div className="text-cyan-400 font-semibold mb-2">✓ 24/7 Support</div>
                 <div className="text-sm">Round-the-clock support and consultation</div>
               </div>
             </div>

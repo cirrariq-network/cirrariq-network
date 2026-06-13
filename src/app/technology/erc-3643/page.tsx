@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Shield, CheckCircle, ArrowRight, ExternalLink, Zap, Database, Lock } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'ERC-3643 - Standard Securities Standard Digital | RWA Labs',
+  title: 'ERC-3643 - Standard Securities Standard Digital | Cirrariq',
   description: 'Complete guide to the ERC-3643 standard for digital securities. Features, benefits, regulatory compliance, and implementation.',
   keywords: 'ERC-3643,digital securities standard,security token,regulatory,KYC,AML,identity verification',
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Complete guide to the ERC-3643 standard for digital securities.',
     type: 'article',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
     images: [
       {
         url: '/images/technology/erc-3643-comprehensive.jpg',

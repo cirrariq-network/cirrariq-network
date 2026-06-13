@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Code, CheckCircle, ArrowRight, ExternalLink, Zap, Shield, Database } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Solidity - Smart contract programming language | RWA Labs',
+  title: 'Solidity - Smart contract programming language | Cirrariq',
   description: 'Complete guide to the Solidity programming language for smart contract development. Features, benefits, examples, and best practices.',
   keywords: 'solidity,programming language,smart contract,EVM,blockchain,contract development,smart contract',
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Complete guide to the Solidity programming language for smart contract development.',
     type: 'article',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
     images: [
       {
         url: '/images/technology/solidity-guide.jpg',
@@ -196,7 +196,7 @@ export default function SolidityPage() {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {features.map((feature, index) => (
                       <div key={index} className="flex items-start space-x-4 ">
-                        <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-purple-500 rounded-xl flex items-center justify-center flex-shrink-0">
+                        <div className="w-12 h-12 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-xl flex items-center justify-center flex-shrink-0">
                           <feature.icon className="w-6 h-6 text-white" />
                         </div>
                         <div>
@@ -283,7 +283,7 @@ export default function SolidityPage() {
                   </div>
                 </div>
 
-                <div className="bg-gradient-to-r from-blue-500 to-purple-500 p-6 rounded-2xl text-white">
+                <div className="bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 p-6 rounded-2xl text-white">
                   <h3 className="text-xl font-bold mb-4">Need Consultation?</h3>
                   <p className="text-blue-100 mb-4">
                     Our expert team is ready to help with smart contract development using Solidity

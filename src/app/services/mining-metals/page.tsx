@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Gem, CheckCircle, Shield, Globe, Users, BarChart3, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Mining & Metals Tokenization | Gold, Silver, Copper, Iron | RWA Labs',
+  title: 'Mining & Metals Tokenization | Gold, Silver, Copper, Iron | Cirrariq',
   description: 'Tokenize gold, silver, copper, iron, precious stones and various mining assets. physical backing, live pricing, 24/7 trading.',
   keywords: 'gold tokenization,silver token,copper token,iron token,mining token,digital gold,precious metals,mining assets',
 }
@@ -192,7 +192,7 @@ export default function MiningMetalsPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-lg transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 

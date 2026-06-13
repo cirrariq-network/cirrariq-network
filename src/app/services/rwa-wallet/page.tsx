@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Wallet, CheckCircle, Shield, Zap, Globe, Users, BarChart3 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Blockchain RWA Wallet | Dedicated Wallet for Real-World Asset Tokens | RWA Labs',
+  title: 'Blockchain RWA Wallet | Dedicated Wallet for Real-World Asset Tokens | Cirrariq',
   description: 'Dedicated blockchain wallet for storing and managing RWA tokens. High security, simple UI, support for all networks.',
   keywords: 'RWA wallet,blockchain wallet,dedicated wallet,token management,secure wallet,RWA wallet',
 }

@@ -3,15 +3,15 @@ import Link from 'next/link'
 import { ArrowRight, Shield, Target, Zap, Users } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'About RWA Labs | Expert Real-World Asset Tokenization Team | 5+ Years Experience',
-  description: 'Meet the RWA Labs team and blockchain experts. Experience in real-world asset tokenization, smart contracts and blockchain technologies.',
-  keywords: 'about RWA Labs,blockchain team,tokenization experts,smart contract development,RWA team,tokenization experience,Solidity experts,MiroTeam',
+  title: 'About Cirrariq | Expert Real-World Asset Tokenization Team | 5+ Years Experience',
+  description: 'Meet the Cirrariq team and blockchain experts. Experience in real-world asset tokenization, smart contracts and blockchain technologies.',
+  keywords: 'about Cirrariq,blockchain team,tokenization experts,smart contract development,RWA team,tokenization experience,Solidity experts,MiroTeam',
   openGraph: {
-    title: 'About RWA Labs | Expert Real-World Asset Tokenization Team',
-    description: 'Meet the RWA Labs team and blockchain experts. 5+ years of experience in real-world asset tokenization.',
+    title: 'About Cirrariq | Expert Real-World Asset Tokenization Team',
+    description: 'Meet the Cirrariq team and blockchain experts. 5+ years of experience in real-world asset tokenization.',
     type: 'website',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
   },
 }
 
@@ -42,10 +42,10 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900 py-20">
+      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
-            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">About RWA Labs</h1>
+            <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">About Cirrariq</h1>
             <p className="text-xl text-blue-100 mb-8 leading-relaxed">
               A specialized blockchain team and smart contract developers with 5+ years of experience in real-world asset tokenization.
             </p>
@@ -68,7 +68,7 @@ export default function AboutPage() {
             <div>
               <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                At RWA Labs, we believe the future of investment lies in real-world asset tokenization.
+                At Cirrariq, we believe the future of investment lies in real-world asset tokenization.
                 Our mission is to use blockchain technology and smart contracts to convert any physical asset
                 into a tradeable digital token.
               </p>
@@ -93,7 +93,7 @@ export default function AboutPage() {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 text-white">
+            <div className="bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 rounded-3xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Stats & Achievements</h3>
               <div className="grid grid-cols-2 gap-6">
                 {achievements.map((a, i) => (
@@ -121,7 +121,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((v, i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl mx-auto mb-6 flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
                   <v.icon className="w-8 h-8 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-gray-900 mb-4">{v.title}</h3>
@@ -162,7 +162,7 @@ export default function AboutPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Work With Us?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">

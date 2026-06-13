@@ -18,7 +18,7 @@ const services = [
     title: 'Mining & Metals Tokenization',
     description: 'Gold, silver, copper, iron, precious stones and various mining assets.',
     icon: Gem,
-    color: 'from-yellow-500 to-orange-500',
+    color: 'from-cyan-400 to-blue-500',
     href: '/services/mining-metals'
   },
   {
@@ -116,7 +116,7 @@ export default function ServicesOverview() {
           className="text-center mt-12"
         >
           <Link href="/services">
-            <button className="bg-gradient-to-r from-blue-600 to-purple-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-blue-700 hover:to-purple-700 transition-all duration-300 flex items-center mx-auto group">
+            <button className="bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-cyan-500 hover:via-blue-700 hover:to-indigo-700 transition-all duration-300 flex items-center mx-auto group">
               View All Services
               <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
             </button>

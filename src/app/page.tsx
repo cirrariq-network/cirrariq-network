@@ -8,21 +8,21 @@ import PortfolioSection from '@/components/PortfolioSection'
 import CTASection from '@/components/CTASection'
 
 export const metadata: Metadata = {
-  title: 'Tokenize Physical Assets | RWA Labs',
+  title: 'Tokenize Physical Assets | Cirrariq',
   description: 'Tokenize your physical assets on blockchain. Convert real estate, gold, agricultural products, vehicles, and mining assets into digital tokens. Secondary market, dedicated wallet, digital sukuk.',
   keywords: 'tokenize,real world assets,RWA,tokenize assets,digital sukuk,ERC-3643,blockchain,token,real estate token,gold token,saffron token,vehicle token,digital sukuk,RWA wallet',
   openGraph: {
-    title: 'Tokenize Physical Assets | RWA Labs',
+    title: 'Tokenize Physical Assets | Cirrariq',
     description: 'Tokenize your physical assets on blockchain. Convert real estate, gold, agricultural products, vehicles, and mining assets into digital tokens.',
     type: 'website',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
     images: [
       {
-        url: '/images/rwa-tokenization-og.jpg',
+        url: '/images/cirrariq-og.jpg',
         width: 1200,
         height: 630,
-        alt: 'Tokenize Physical Assets - RWA Labs',
+        alt: 'Tokenize Physical Assets - Cirrariq',
       },
     ],
   },
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Tokenize Physical Assets | RWA Platform',
     description: 'Tokenize your physical assets on blockchain',
-    images: ['/images/rwa-tokenization-twitter.jpg'],
+    images: ['/images/cirrariq-twitter.jpg'],
   },
   robots: {
     index: true,
@@ -44,7 +44,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: 'https://rwa-labs.io',
+    canonical: 'https://cirrariq.io',
   },
 }
 

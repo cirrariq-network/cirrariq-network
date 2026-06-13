@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Calendar, Clock, User, CheckCircle } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'What Is Real-World Asset Tokenization? A Complete Guide for Beginners | RWA Labs',
+  title: 'What Is Real-World Asset Tokenization? A Complete Guide for Beginners | Cirrariq',
   description: 'A complete introduction to real-world asset tokenization, its benefits, challenges, and future. A comprehensive guide for beginners.',
   keywords: 'real world asset tokenization,what is tokenization,RWA tokenization,tokenization guide,tokenization education',
   openGraph: {
@@ -12,8 +12,8 @@ export const metadata: Metadata = {
     description: 'A complete introduction to real-world asset tokenization, its benefits, challenges, and future.',
     type: 'article',
     locale: 'en_US',
-    siteName: 'RWA Labs',
-    authors: ['RWA Labs'],
+    siteName: 'Cirrariq',
+    authors: ['Cirrariq'],
     publishedTime: '2024-01-15T10:00:00Z',
     modifiedTime: '2024-01-15T10:00:00Z',
   },
@@ -120,7 +120,7 @@ export default function BlogArticlePage() {
             <div className="flex items-center space-x-6 text-blue-100">
               <div className="flex items-center">
                 <User className="w-5 h-5 mr-2" />
-                RWA Labs
+                Cirrariq
               </div>
               <div className="flex items-center">
                 <Calendar className="w-5 h-5 mr-2" />
@@ -322,13 +322,13 @@ export default function BlogArticlePage() {
                   </p>
                   <p className="text-lg text-gray-700 leading-relaxed">
                     If you have assets you want to tokenize, or as an investor are looking for 
-                    new opportunities, contact our expert team at RWA Labs.
+                    new opportunities, contact our expert team at Cirrariq.
                   </p>
                 </section>
               </article>
 
               {/* CTA Section */}
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-8 text-white text-center mt-12">
+              <div className="bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 rounded-2xl p-8 text-white text-center mt-12">
                 <h3 className="text-2xl font-bold mb-4">Ready to Start Your Tokenization Project?</h3>
                 <p className="text-blue-100 mb-6">With our free consultation, find the best solution for your assets.</p>
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">

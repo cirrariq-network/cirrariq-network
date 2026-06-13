@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Lock, CheckCircle, ArrowRight, ExternalLink, Shield, Users, Key } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Multi-Signature - Multi-signature Wallet | RWA Labs',
+  title: 'Multi-Signature - Multi-signature Wallet | Cirrariq',
   description: 'Complete guide to multi-signature wallets for high-security transactions. Features, benefits, types, and implementation.',
   keywords: 'multi-signature,multisig,multi-signature wallet,blockchain security,secure transactions,asset management',
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Complete guide to multi-signature wallets for high-security transactions.',
     type: 'article',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
     images: [
       {
         url: '/images/technology/multi-signature-security.jpg',

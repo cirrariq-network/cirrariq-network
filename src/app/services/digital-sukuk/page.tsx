@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { FileText, CheckCircle, Shield, Globe, Users, BarChart3, TrendingUp } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Digital Sukuk & Securities | Islamic Securities, Income Sukuk | RWA Labs',
+  title: 'Digital Sukuk & Securities | Islamic Securities, Income Sukuk | Cirrariq',
   description: 'Digital Sukuk, Islamic securities, income-generating sukuk, participation bonds and debentures using the ERC-3643 standard.',
   keywords: 'digital sukuk,Islamic securities,income sukuk,participation bonds,debentures,ERC-3643,digital sukuk',
 }

@@ -10,43 +10,43 @@ const geist = Geist({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://rwa-labs.io'),
-  title: "Tokenize Real-World Assets on Blockchain | RWA Labs",
+  metadataBase: new URL('https://cirrariq.io'),
+  title: "Tokenize Real-World Assets on Blockchain | Cirrariq",
   description: "Convert real estate, gold, saffron, pistachio and physical assets into digital tokens on blockchain. Free consultation, secure smart contracts, secondary market.",
   keywords: "tokenize,real world assets,RWA,blockchain,smart contract,real estate token,gold token,saffron token,digital sukuk,pistachio token,rice token,ERC-20,ERC-3643,DeFi,Solidity,asset tokenization,RWA wallet,free tokenization consultation,blockchain tokenization,tokenization platform",
   openGraph: {
-    title: "Tokenize Real-World Assets on Blockchain | RWA Labs",
+    title: "Tokenize Real-World Assets on Blockchain | Cirrariq",
     description: "Convert real estate, gold, saffron, pistachio and physical assets into digital tokens on blockchain. Free consultation, secure smart contracts.",
     type: "website",
     locale: "en_US",
-    siteName: "RWA Labs",
-    url: "https://rwa-labs.io",
+    siteName: "Cirrariq",
+    url: "https://cirrariq.io",
     images: [
       {
-        url: "/images/rwa-tokenization-og.jpg",
+        url: "/images/cirrariq-og.jpg",
         width: 1200,
         height: 630,
-        alt: "RWA Labs - Tokenize Real-World Assets",
+        alt: "Cirrariq - Tokenize Real-World Assets",
         type: "image/jpeg",
       },
       {
-        url: "/images/rwa-tokenization-og-square.jpg",
+        url: "/images/cirrariq-og-square.jpg",
         width: 1200,
         height: 1200,
-        alt: "RWA Labs Logo",
+        alt: "Cirrariq Logo",
         type: "image/jpeg",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    site: "@rwa_labs",
-    creator: "@rwa_labs",
-    title: "Tokenize Real-World Assets on Blockchain | RWA Labs",
+    site: "@cirrariq",
+    creator: "@cirrariq",
+    title: "Tokenize Real-World Assets on Blockchain | Cirrariq",
     description: "Convert real estate, gold, saffron, pistachio and physical assets into digital tokens on blockchain.",
     images: {
-      url: "/images/rwa-tokenization-twitter.jpg",
-      alt: "RWA Labs - Tokenize Real-World Assets",
+      url: "/images/cirrariq-twitter.jpg",
+      alt: "Cirrariq - Tokenize Real-World Assets",
     },
   },
   robots: {
@@ -61,7 +61,7 @@ export const metadata: Metadata = {
     },
   },
   alternates: {
-    canonical: "https://rwa-labs.io",
+    canonical: "https://cirrariq.io",
   },
 };
 
@@ -73,19 +73,19 @@ export default function RootLayout({
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Organization",
-    "name": "RWA Labs",
+    "name": "Cirrariq",
     "description": "Tokenize Real-World Assets on Blockchain - Convert real estate, gold, saffron, pistachio and physical assets into digital tokens",
-    "url": "https://rwa-labs.io",
-    "logo": "https://rwa-labs.io/images/rwa-labs-logo.png",
+    "url": "https://cirrariq.io",
+    "logo": "https://cirrariq.io/images/logo-full-light.png",
     "contactPoint": {
       "@type": "ContactPoint",
-      "telephone": "+1-800-RWA-LABS",
+      "telephone": "+1-800-CIRRARIQ",
       "contactType": "customer service",
       "availableLanguage": ["English"]
     },
     "sameAs": [
-      "https://t.me/rwa_labs",
-      "https://twitter.com/rwa_labs"
+      "https://t.me/cirrariq",
+      "https://twitter.com/cirrariq"
     ],
     "service": {
       "@type": "Service",
@@ -93,7 +93,7 @@ export default function RootLayout({
       "description": "Converting physical assets into tradeable digital tokens",
       "provider": {
         "@type": "Organization",
-        "name": "RWA Labs"
+        "name": "Cirrariq"
       }
     }
   };
@@ -102,11 +102,11 @@ export default function RootLayout({
     <html lang="en" dir="ltr">
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5" />
-        <meta name="theme-color" content="#3b82f6" />
+        <meta name="theme-color" content="#2563eb" />
         <meta name="mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-capable" content="yes" />
         <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-        <meta name="apple-mobile-web-app-title" content="RWA Labs" />
+        <meta name="apple-mobile-web-app-title" content="Cirrariq" />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon-16x16.png" sizes="16x16" type="image/png" />
         <link rel="icon" href="/favicon-32x32.png" sizes="32x32" type="image/png" />

@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { Calendar, Clock, User, ArrowRight } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Complete Guide to Solidity for RWA Smart Contract Development | RWA Labs',
+  title: 'Complete Guide to Solidity for RWA Smart Contract Development | Cirrariq',
   description: 'A comprehensive guide to the Solidity programming language and best practices for developing smart contracts for real-world asset tokenization.',
   keywords: 'Solidity,Smart Contract,blockchain programming,RWA development,Solidity tutorial',
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'A comprehensive guide to Solidity and best practices for developing smart contracts.',
     type: 'article',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
   },
 }
 
@@ -33,7 +33,7 @@ export default function SolidityGuidePage() {
             <div className="flex items-center justify-center space-x-6  text-gray-400">
               <span className="flex items-center">
                 <User className="w-5 h-5 ml-2" />
-                RWA Labs
+                Cirrariq
               </span>
               <span className="flex items-center">
                 <Clock className="w-5 h-5 ml-2" />

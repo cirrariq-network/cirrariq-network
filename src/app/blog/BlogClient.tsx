@@ -10,7 +10,7 @@ const articles = [
     title: 'What Is Real-World Asset Tokenization? A Complete Guide for Beginners',
     excerpt: 'A full introduction to the concept of real-world asset tokenization and how it works in the blockchain world.',
     category: 'Educational',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '8 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/rwa-intro.jpg',
@@ -21,7 +21,7 @@ const articles = [
     title: 'The Complete Guide to Real Estate Tokenization',
     excerpt: 'The full steps of real estate tokenization from selecting the asset to listing on the secondary market.',
     category: 'Guide',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '12 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/real-estate-guide.jpg',
@@ -32,7 +32,7 @@ const articles = [
     title: 'Comparing ERC-20 and ERC-3643 Standards for Tokenization',
     excerpt: 'Key differences between various token standards and how to choose the best option.',
     category: 'Technical',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '10 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/erc-standards.jpg',
@@ -43,7 +43,7 @@ const articles = [
     title: 'Smart Contract Security in Real-World Asset Tokenization',
     excerpt: 'Security solutions and best practices for developing secure smart contracts.',
     category: 'Security',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '15 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/smart-contract-security.jpg',
@@ -54,7 +54,7 @@ const articles = [
     title: 'Agricultural Product Tokenization: Opportunities and Challenges',
     excerpt: 'How to tokenize agricultural products and the benefits for farmers and investors.',
     category: 'Applied',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '9 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/agriculture-token.jpg',
@@ -65,7 +65,7 @@ const articles = [
     title: 'Legal Framework for Real-World Asset Tokenization',
     excerpt: 'Laws and regulations governing real-world asset tokenization.',
     category: 'Legal',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '11 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/legal-framework.jpg',
@@ -76,7 +76,7 @@ const articles = [
     title: 'The Role of Oracles in Pricing Tokenized Assets',
     excerpt: 'How oracles are used for accurate and up-to-date asset pricing.',
     category: 'Technical',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '7 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/oracle-pricing.jpg',
@@ -87,7 +87,7 @@ const articles = [
     title: 'Integrating Real-World Assets with the DeFi Ecosystem',
     excerpt: 'How to integrate tokenized assets with DeFi protocols.',
     category: 'DeFi',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '13 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/defi-rwa.jpg',
@@ -98,7 +98,7 @@ const articles = [
     title: 'The Future of Digital Sukuk and Islamic Securities',
     excerpt: 'Future trends in digital sukuk and their impact on financial markets.',
     category: 'Finance',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '10 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/sukuk-future.jpg',
@@ -109,7 +109,7 @@ const articles = [
     title: 'Real-World Asset Tokenization Market Trends in 2024',
     excerpt: 'A review of key trends and market forecasts for RWA this year.',
     category: 'Market',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '14 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/rwa-trends-2024.jpg',
@@ -120,7 +120,7 @@ const articles = [
     title: 'The Complete Solidity Programming Guide for Beginners',
     excerpt: 'A comprehensive tutorial on Solidity programming language from basics to advanced.',
     category: 'Technical',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '20 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/solidity-guide.jpg',
@@ -131,7 +131,7 @@ const articles = [
     title: 'IPFS Decentralized Storage in RWA Projects',
     excerpt: 'How IPFS is used for secure and permanent storage of tokenized asset data.',
     category: 'Technical',
-    author: 'RWA Labs',
+    author: 'Cirrariq',
     readTime: '8 min',
     publishDate: 'Oct 2024',
     image: '/images/blog/ipfs-storage.jpg',
@@ -155,11 +155,11 @@ export default function BlogClient() {
   const featuredArticles = articles.filter(a => a.featured)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900">
+    <div className="min-h-screen bg-gradient-to-br from-[#03050f] via-blue-950 to-cyan-950">
       {/* Hero */}
       <div className="py-20 px-4">
         <div className="container mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">RWA Labs Blog</h1>
+          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Cirrariq Blog</h1>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
             Specialized articles and comprehensive guides on real-world asset tokenization.
           </p>

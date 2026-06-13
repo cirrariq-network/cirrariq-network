@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { ExternalLink, ArrowRight, CheckCircle, Calendar, Users, DollarSign } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Completed Projects | RWA Labs Portfolio',
+  title: 'Completed Projects | Cirrariq Portfolio',
   description: 'Successful real-world asset tokenization projects including saffron, pistachio, sheep, rice and other assets.',
   keywords: 'tokenization portfolio,RWA projects,pistachio token,sheep token,rice token,saffron token',
 }
@@ -68,7 +68,7 @@ export default function PortfolioPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900 py-20">
+      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
         <div className="container mx-auto px-4 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Completed Projects</h1>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
@@ -166,7 +166,7 @@ export default function PortfolioPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Entrust Your Project to Us</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">

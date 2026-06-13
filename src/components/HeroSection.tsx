@@ -7,7 +7,7 @@ import CalendlyButton from './CalendlyButton'
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-900 via-purple-900 to-indigo-900 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-[#03050f] via-blue-950 to-cyan-950 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-20">
         <div className="w-full h-full" style={{
@@ -26,13 +26,13 @@ export default function HeroSection() {
           >
             <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
               Transform Physical Assets Into
-              <span className="block bg-gradient-to-r from-yellow-400 to-orange-500 bg-clip-text text-transparent">
+              <span className="block bg-gradient-to-r from-cyan-400 to-blue-500 bg-clip-text text-transparent">
                 Tradeable Digital Tokens
               </span>
             </h1>
             <p className="text-xl md:text-2xl text-gray-300 mb-8 leading-relaxed">
               Using blockchain technology and smart contracts, convert any physical asset into digital tokens.
-              <span className="block text-yellow-400 font-semibold mt-2">Real Estate • Metals & Mining • Agricultural Products • Vehicles & Machinery • Securities</span>
+              <span className="block text-cyan-400 font-semibold mt-2">Real Estate • Metals & Mining • Agricultural Products • Vehicles & Machinery • Securities</span>
             </p>
           </motion.div>
 
@@ -46,7 +46,7 @@ export default function HeroSection() {
               text="Free Consultation" 
               variant="primary" 
               size="lg" 
-              className="bg-gradient-to-r from-yellow-500 to-orange-600 hover:from-yellow-600 hover:to-orange-700"
+              className="bg-gradient-to-r from-cyan-400 to-blue-600 hover:from-cyan-500 hover:to-blue-700"
             />
             <Link 
               href="/portfolio"
@@ -65,21 +65,21 @@ export default function HeroSection() {
           >
             <div className="text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <Shield className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
+                <Shield className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-white mb-2">High Security</h3>
                 <p className="text-gray-300">Secure smart contracts and international standards</p>
               </div>
             </div>
             <div className="text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <Zap className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
+                <Zap className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-white mb-2">Fast Execution</h3>
                 <p className="text-gray-300">Rapid tokenization with minimal fees</p>
               </div>
             </div>
             <div className="text-center">
               <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20">
-                <Globe className="w-12 h-12 text-yellow-400 mx-auto mb-4" />
+                <Globe className="w-12 h-12 text-cyan-400 mx-auto mb-4" />
                 <h3 className="text-xl font-semibold text-white mb-2">Global Access</h3>
                 <p className="text-gray-300">Trade on international markets worldwide</p>
               </div>
@@ -92,12 +92,12 @@ export default function HeroSection() {
       <motion.div
         animate={{ y: [0, -20, 0] }}
         transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute top-20 left-10 w-20 h-20 bg-yellow-400/20 rounded-full blur-xl"
+        className="absolute top-20 left-10 w-20 h-20 bg-cyan-400/20 rounded-full blur-xl"
       />
       <motion.div
         animate={{ y: [0, 20, 0] }}
         transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-        className="absolute bottom-20 right-10 w-32 h-32 bg-purple-400/20 rounded-full blur-xl"
+        className="absolute bottom-20 right-10 w-32 h-32 bg-indigo-400/20 rounded-full blur-xl"
       />
     </section>
   )

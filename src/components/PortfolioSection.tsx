@@ -23,7 +23,7 @@ const projects = [
       'Automated Reporting'
     ],
     link: 'https://zfrnbon.surge.sh',
-    color: 'from-yellow-500 to-orange-500'
+    color: 'from-cyan-400 to-blue-500'
   },
   {
     id: 'pistachio',
@@ -74,7 +74,7 @@ const projects = [
       'Version Control'
     ],
     link: 'https://brnjbon.surge.sh',
-    color: 'from-yellow-400 to-yellow-600'
+    color: 'from-cyan-400 to-cyan-500'
   }
 ]
 
@@ -256,7 +256,7 @@ export default function PortfolioSection() {
                 text="Request New Project" 
                 variant="primary" 
                 size="lg" 
-                className="bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700"
+                className="bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 hover:from-cyan-500 hover:via-blue-700 hover:to-indigo-700"
               />
               <Link href="/portfolio">
                 <button className="border-2 border-gray-300 text-gray-700 px-8 py-3 rounded-full font-semibold hover:border-gray-400 hover:text-gray-800 transition-all duration-300">

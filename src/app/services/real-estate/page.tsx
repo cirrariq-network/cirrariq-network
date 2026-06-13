@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { Building2, CheckCircle, Shield, Zap, Globe, Users, BarChart3 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Real Estate Tokenization | Convert Buildings to Digital Tokens | RWA Labs',
+  title: 'Real Estate Tokenization | Convert Buildings to Digital Tokens | Cirrariq',
   description: 'Convert residential, commercial buildings and construction projects into digital tokens. Fractional ownership, rental income, secondary market, and automated reporting.',
   keywords: 'real estate tokenization,building token,property token,real estate tokenization,digital real estate,fractional ownership property',
 }
@@ -79,7 +79,7 @@ export default function RealEstatePage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900 py-20">
+      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -121,7 +121,7 @@ export default function RealEstatePage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
               <div key={index} className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-xl transition-all duration-300">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl flex items-center justify-center mb-6">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 
@@ -162,7 +162,7 @@ export default function RealEstatePage() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {process.map((step, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   {step.step}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">
@@ -216,7 +216,7 @@ export default function RealEstatePage() {
                 </div>
               </div>
             </div>
-            <div className="bg-gradient-to-r from-blue-600 to-purple-600 rounded-3xl p-8 text-white">
+            <div className="bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 rounded-3xl p-8 text-white">
               <h3 className="text-2xl font-bold mb-6">Stats & Performance</h3>
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
@@ -242,7 +242,7 @@ export default function RealEstatePage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
             Ready to Tokenize Your Real Estate?

@@ -4,7 +4,7 @@ import Image from 'next/image'
 import { Zap, CheckCircle, ArrowRight, ExternalLink, Shield, Database, RefreshCw } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Proxy Pattern - Smart Contract Upgrade Pattern | RWA Labs',
+  title: 'Proxy Pattern - Smart Contract Upgrade Pattern | Cirrariq',
   description: 'Complete guide to the Proxy Pattern for upgrading smart contracts. Features, benefits, types, and implementation.',
   keywords: 'Proxy Pattern,contract upgrade,upgradeable contract,OpenZeppelin,storage pattern,implementation',
   openGraph: {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     description: 'Complete guide to the Proxy Pattern for upgrading smart contracts',
     type: 'article',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
     images: [
       {
         url: '/images/technology/proxy-pattern-explained.jpg',

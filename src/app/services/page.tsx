@@ -3,15 +3,15 @@ import Link from 'next/link'
 import { Building2, Gem, Wheat, Car, FileText, Wallet, ArrowRight, CheckCircle, TrendingUp, Users, DollarSign } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Real-World Asset Tokenization Services | RWA Labs - 6 Specialized Services',
+  title: 'Real-World Asset Tokenization Services | Cirrariq - 6 Specialized Services',
   description: '6 specialized tokenization services: real estate, mining assets, agricultural products, vehicles, digital sukuk, and blockchain RWA wallet.',
   keywords: 'tokenization services,real estate tokenization,gold token,agricultural tokenization,digital sukuk,RWA wallet,real world asset tokenization',
   openGraph: {
-    title: 'Real-World Asset Tokenization Services | RWA Labs',
+    title: 'Real-World Asset Tokenization Services | Cirrariq',
     description: '6 specialized real-world asset tokenization services with the highest quality and security.',
     type: 'website',
     locale: 'en_US',
-    siteName: 'RWA Labs',
+    siteName: 'Cirrariq',
   },
 }
 
@@ -79,7 +79,7 @@ export default function ServicesPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero */}
-      <section className="bg-gradient-to-r from-blue-900 via-purple-900 to-indigo-900 py-20">
+      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
         <div className="container mx-auto px-4 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Real-World Asset Tokenization Services</h1>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
@@ -106,7 +106,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 rounded-2xl mx-auto mb-4 flex items-center justify-center">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl mx-auto mb-4 flex items-center justify-center">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
                 <div className="text-4xl font-bold text-gray-900 mb-2">{stat.number}</div>
@@ -173,7 +173,7 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {processSteps.map((step, i) => (
               <div key={i} className="text-center">
-                <div className="w-16 h-16 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
+                <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   {step.step}
                 </div>
                 <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
@@ -185,7 +185,7 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-blue-600 to-purple-600">
+      <section className="py-20 bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Ready to Start Your Tokenization Project?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">

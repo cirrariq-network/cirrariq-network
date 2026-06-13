@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --cirrariq-navy: #03050f;
 }
 
 @theme inline {
@@ -28,13 +29,25 @@ body {
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 bg-clip-text text-transparent;
   }
-  
+
+  .gradient-bg {
+    @apply bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600;
+  }
+
+  .gradient-bg-hover {
+    @apply hover:from-cyan-500 hover:via-blue-700 hover:to-indigo-700;
+  }
+
+  .hero-gradient {
+    @apply bg-gradient-to-br from-[#03050f] via-blue-950 to-cyan-950;
+  }
+
   .glass-effect {
     @apply bg-white/10 backdrop-blur-sm border border-white/20;
   }
-  
+
   .card-hover {
     @apply hover:shadow-2xl hover:-translate-y-2 transition-all duration-300;
   }
