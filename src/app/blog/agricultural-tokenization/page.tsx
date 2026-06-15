@@ -20,7 +20,7 @@ export const metadata: Metadata = {
 
 export default function ERC20vsERC3643Page() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Article Header */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -71,18 +71,18 @@ export default function ERC20vsERC3643Page() {
         <div className="max-w-4xl mx-auto">
           <article className="prose prose-lg max-w-none">
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <h2 className="text-3xl font-bold text-white mb-6">Introduction</h2>
+              <p className="text-lg text-slate-300 leading-relaxed mb-6">
                 Choosing the right standard for real-world asset tokenization is one of the most important decisions in the development process. 
                 In this article, we compare the two main standards ERC-20 and ERC-3643.
               </p>
             </section>
 
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">ERC-20: Fungible Token Standards</h2>
-              <div className="bg-blue-50 border-r-4 border-blue-500 p-6 mb-6">
+              <h2 className="text-3xl font-bold text-white mb-6">ERC-20: Fungible Token Standards</h2>
+              <div className="bg-blue-900/20 border-r-4 border-blue-500 p-6 mb-6">
                 <h3 className="text-xl font-bold text-blue-900 mb-4">Key Features ERC-20:</h3>
-                <ul className="space-y-2 text-blue-800">
+                <ul className="space-y-2 text-blue-300">
                   <li>• Simplicity of implementation</li>
                   <li>• High compatibility with exchanges</li>
                   <li>• Low development cost</li>
@@ -92,7 +92,7 @@ export default function ERC20vsERC3643Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">ERC-3643: Standard Securities Standard</h2>
+              <h2 className="text-3xl font-bold text-white mb-6">ERC-3643: Standard Securities Standard</h2>
               <div className="bg-green-50 border-r-4 border-green-500 p-6 mb-6">
                 <h3 className="text-xl font-bold text-green-900 mb-4">Key Features ERC-3643:</h3>
                 <ul className="space-y-2 text-green-800">
@@ -105,8 +105,8 @@ export default function ERC20vsERC3643Page() {
             </section>
 
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Conclusion</h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <h2 className="text-3xl font-bold text-white mb-6">Conclusion</h2>
+              <p className="text-lg text-slate-300 leading-relaxed mb-6">
                 The choice between ERC-20 and ERC-3643 depends on the asset type and regulatory requirements. 
                 For general assets, ERC-20 is more suitable, but for security tokens, ERC-3643 is the better choice.
               </p>
@@ -120,13 +120,13 @@ export default function ERC20vsERC3643Page() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/contact"
-                className="bg-white text-purple-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300"
+                className="bg-white text-purple-400 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300"
               >
                 Free Consultation
               </Link>
               <Link 
                 href="/technology"
-                className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-600 transition-all duration-300"
+                className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-purple-400 transition-all duration-300"
               >
                 View Technologies
               </Link>

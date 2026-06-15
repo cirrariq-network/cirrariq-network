@@ -50,9 +50,9 @@ const securityFeatures = [
 
 export default function TechnologyPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero */}
-      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
+      <section className="bg-gradient-to-r [#080c14] py-20">
         <div className="container mx-auto px-4 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Advanced Technologies</h1>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
@@ -65,8 +65,8 @@ export default function TechnologyPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Technologies We Use</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-6">Technologies We Use</h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Advanced technologies and international standards for real-world asset tokenization.
             </p>
           </div>
@@ -77,16 +77,16 @@ export default function TechnologyPage() {
                   <tech.icon className="w-8 h-8 text-white" />
                 </div>
                 <div className="mb-4">
-                  <h3 className="text-2xl font-bold text-gray-900 mb-2">
+                  <h3 className="text-2xl font-bold text-white mb-2">
                     <Link href={`/technology/${tech.name === 'ERC-20' ? 'erc-20' : tech.name === 'ERC-3643' ? 'erc-3643' : tech.name === 'Proxy Pattern' ? 'proxy-pattern' : tech.name === 'Multi-Signature' ? 'multi-signature' : tech.name.toLowerCase()}`}
-                      className="hover:text-blue-600 transition-colors">{tech.name}</Link>
+                      className="hover:text-blue-400 transition-colors">{tech.name}</Link>
                   </h3>
-                  <span className="text-blue-600 font-semibold text-sm">{tech.category}</span>
+                  <span className="text-blue-400 font-semibold text-sm">{tech.category}</span>
                 </div>
-                <p className="text-gray-600 mb-6 leading-relaxed">{tech.description}</p>
+                <p className="text-slate-400 mb-6 leading-relaxed">{tech.description}</p>
                 <div className="space-y-2">
                   {tech.features.map((f, fi) => (
-                    <div key={fi} className="flex items-center text-sm text-gray-600">
+                    <div key={fi} className="flex items-center text-sm text-slate-400">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />{f}
                     </div>
                   ))}
@@ -98,11 +98,11 @@ export default function TechnologyPage() {
       </section>
 
       {/* Security */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0e1420]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Security & Reliability</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">High system security and reliability at every stage.</p>
+            <h2 className="text-4xl font-bold text-white mb-6">Security & Reliability</h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">High system security and reliability at every stage.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {securityFeatures.map((f, i) => (
@@ -110,8 +110,8 @@ export default function TechnologyPage() {
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
                   <f.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{f.title}</h3>
-                <p className="text-gray-600">{f.description}</p>
+                <h3 className="text-xl font-bold text-white mb-4">{f.title}</h3>
+                <p className="text-slate-400">{f.description}</p>
               </div>
             ))}
           </div>
@@ -119,31 +119,31 @@ export default function TechnologyPage() {
       </section>
 
       {/* Technical Specs */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#0a0f1a]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Technical Specifications</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Technical details and system specifications.</p>
+            <h2 className="text-4xl font-bold text-white mb-6">Technical Specifications</h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">Technical details and system specifications.</p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Smart Contracts</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Smart Contracts</h3>
               <div className="space-y-4">
                 {[['Language', 'Solidity 0.8.19+'],['Network','Ethereum, Polygon, BSC'],['Token Standard','ERC-20, ERC-3643'],['Upgrade Pattern','Proxy Pattern']].map(([k,v], i) => (
-                  <div key={i} className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="font-semibold text-gray-700">{k}:</span>
-                    <span className="text-blue-600">{v}</span>
+                  <div key={i} className="flex justify-between items-center py-2 border-b border-slate-800">
+                    <span className="font-semibold text-slate-300">{k}:</span>
+                    <span className="text-blue-400">{v}</span>
                   </div>
                 ))}
               </div>
             </div>
             <div className="bg-white rounded-2xl p-8 shadow-lg">
-              <h3 className="text-2xl font-bold text-gray-900 mb-6">Security</h3>
+              <h3 className="text-2xl font-bold text-white mb-6">Security</h3>
               <div className="space-y-4">
                 {[['Wallet','Multi-Signature'],['Audit','CertiK, ConsenSys'],['Storage','IPFS, Arweave'],['Oracle','Chainlink, Band Protocol']].map(([k,v], i) => (
-                  <div key={i} className="flex justify-between items-center py-2 border-b border-gray-100">
-                    <span className="font-semibold text-gray-700">{k}:</span>
-                    <span className="text-blue-600">{v}</span>
+                  <div key={i} className="flex justify-between items-center py-2 border-b border-slate-800">
+                    <span className="font-semibold text-slate-300">{k}:</span>
+                    <span className="text-blue-400">{v}</span>
                   </div>
                 ))}
               </div>
@@ -158,10 +158,10 @@ export default function TechnologyPage() {
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">Have Questions About Our Technologies?</h2>
           <p className="text-xl text-blue-100 mb-8 max-w-2xl mx-auto">Our technical team is ready to answer your specialized questions.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
+            <Link href="/contact" className="bg-white text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
               Contact Technical Team
             </Link>
-            <Link href="/services" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+            <Link href="/services" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-400 transition-all duration-300">
               View Services
             </Link>
           </div>

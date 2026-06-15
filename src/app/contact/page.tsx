@@ -36,9 +36,9 @@ const faqItems = [
 
 export default function ContactPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
+      <section className="bg-gradient-to-r [#080c14] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Contact Us</h1>
@@ -66,19 +66,19 @@ export default function ContactPage() {
       </section>
 
       {/* FAQ Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#0a0f1a]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Frequently Asked Questions</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-6">Frequently Asked Questions</h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Answers to common questions about real-world asset tokenization.
             </p>
           </div>
           <div className="max-w-4xl mx-auto space-y-6">
             {faqItems.map((item, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 shadow-lg">
-                <h3 className="text-lg font-bold text-gray-900 mb-3">{item.question}</h3>
-                <p className="text-gray-600 leading-relaxed">{item.answer}</p>
+                <h3 className="text-lg font-bold text-white mb-3">{item.question}</h3>
+                <p className="text-slate-400 leading-relaxed">{item.answer}</p>
               </div>
             ))}
           </div>
@@ -95,10 +95,10 @@ export default function ContactPage() {
             Contact us now and get a free consultation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a href="tel:+18003000000" className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
+            <a href="tel:+18003000000" className="bg-white text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
               Call Now
             </a>
-            <CalendlyButton text="Schedule a Meeting" variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-600" />
+            <CalendlyButton text="Schedule a Meeting" variant="outline" size="lg" className="border-2 border-white text-white hover:bg-white hover:text-blue-400" />
           </div>
         </div>
       </section>

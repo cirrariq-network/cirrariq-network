@@ -171,7 +171,7 @@ const useCases = [
 
 export default function ERC20Page() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -226,13 +226,13 @@ export default function ERC20Page() {
               {/* Main Content */}
               <div className="lg:col-span-2">
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is ERC-20?</h2>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <h2 className="text-3xl font-bold text-white mb-6">What Is ERC-20?</h2>
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     ERC-20 is a technical standard for smart contracts on the Ethereum network that defines how to create 
                     fungible tokens. This standard includes a set of 
                     rules and functions that all ERC-20 tokens must follow.
                   </p>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     This standard enables easy interaction between various tokens, wallets, and exchanges. 
                     Every ERC-20 token has common features such as transfer capability, approval, and balance review.
                   </p>
@@ -240,7 +240,7 @@ export default function ERC20Page() {
 
                 {/* Features */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Key Features</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Key Features</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {features.map((feature, index) => (
                       <div key={index} className="flex items-start space-x-4 ">
@@ -248,8 +248,8 @@ export default function ERC20Page() {
                           <feature.icon className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
-                          <p className="text-gray-600">{feature.description}</p>
+                          <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                          <p className="text-slate-400">{feature.description}</p>
                         </div>
                       </div>
                     ))}
@@ -258,15 +258,15 @@ export default function ERC20Page() {
 
                 {/* Functions */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Mandatory Functions</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Mandatory Functions</h2>
                   <div className="space-y-6">
                     {functions.map((func, index) => (
-                      <div key={index} className="border border-gray-200 rounded-xl p-6">
+                      <div key={index} className="border border-slate-800 rounded-xl p-6">
                         <div className="flex items-center justify-between mb-2">
-                          <h3 className="text-xl font-bold text-gray-900 font-mono">{func.name}</h3>
-                          <span className="text-blue-600 font-semibold">{func.returns}</span>
+                          <h3 className="text-xl font-bold text-white font-mono">{func.name}</h3>
+                          <span className="text-blue-400 font-semibold">{func.returns}</span>
                         </div>
-                        <p className="text-gray-600">{func.description}</p>
+                        <p className="text-slate-400">{func.description}</p>
                       </div>
                     ))}
                   </div>
@@ -274,12 +274,12 @@ export default function ERC20Page() {
 
                 {/* Events */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Events</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Events</h2>
                   <div className="space-y-6">
                     {events.map((event, index) => (
-                      <div key={index} className="border border-gray-200 rounded-xl p-6">
-                        <h3 className="text-xl font-bold text-gray-900 font-mono mb-2">{event.name}</h3>
-                        <p className="text-gray-600 mb-2">{event.description}</p>
+                      <div key={index} className="border border-slate-800 rounded-xl p-6">
+                        <h3 className="text-xl font-bold text-white font-mono mb-2">{event.name}</h3>
+                        <p className="text-slate-400 mb-2">{event.description}</p>
                         <div className="bg-gray-100 rounded-lg p-3">
                           <code className="text-sm text-gray-800">{event.parameters}</code>
                         </div>
@@ -290,7 +290,7 @@ export default function ERC20Page() {
 
                 {/* Code Example */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Example Implementation</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Example Implementation</h2>
                   <div className="bg-gray-900 rounded-xl p-6 overflow-x-auto">
                     <pre className="text-green-400 text-sm leading-relaxed">
                       <code>{codeExample}</code>
@@ -300,12 +300,12 @@ export default function ERC20Page() {
 
                 {/* Use Cases */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Use Cases</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Use Cases</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {useCases.map((useCase, index) => (
                       <div key={index} className="flex items-center space-x-3 ">
                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700">{useCase}</span>
+                        <span className="text-slate-300">{useCase}</span>
                       </div>
                     ))}
                   </div>
@@ -315,51 +315,51 @@ export default function ERC20Page() {
               {/* Sidebar */}
               <div className="lg:col-span-1">
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">General Info</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">General Info</h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Type:</span>
+                      <span className="text-slate-400">Type:</span>
                       <span className="font-semibold text-green-600">Token Standard</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Capability:</span>
+                      <span className="text-slate-400">Capability:</span>
                       <span className="font-semibold text-green-600">Fungible</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Network:</span>
+                      <span className="text-slate-400">Network:</span>
                       <span className="font-semibold text-green-600">Ethereum</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Status:</span>
+                      <span className="text-slate-400">Status:</span>
                       <span className="font-semibold text-green-600">Active</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Benefits</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Benefits</h3>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm text-gray-600">Wallet compatibility</span>
+                      <span className="text-sm text-slate-400">Wallet compatibility</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm text-gray-600">Trading capability Easy</span>
+                      <span className="text-sm text-slate-400">Trading capability Easy</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm text-gray-600">Standard Secure</span>
+                      <span className="text-sm text-slate-400">Standard Secure</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-green-500" />
-                      <span className="text-sm text-gray-600">Broad support</span>
+                      <span className="text-sm text-slate-400">Broad support</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Useful Resources</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Useful Resources</h3>
                   <div className="space-y-3">
                     <a href="https://eips.ethereum.org/EIPS/eip-20" target="_blank" rel="noopener noreferrer" className="flex items-center text-green-600 hover:text-green-800 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
@@ -381,7 +381,7 @@ export default function ERC20Page() {
                   <p className="text-green-100 mb-4">
                     Our expert team is ready to develop ERC-20 tokens for RWA projects
                   </p>
-                  <Link href="/contact" className="inline-flex items-center bg-white text-green-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  <Link href="/contact" className="inline-flex items-center bg-[#0e1420] text-green-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                     Contact Us
                     <ArrowRight className="w-4 h-4 mr-2" />
                   </Link>

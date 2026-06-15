@@ -1,157 +1,82 @@
 import Link from 'next/link'
 import Image from 'next/image'
-import { Phone, ExternalLink } from 'lucide-react'
-import CalendlyButton from './CalendlyButton'
+import { Linkedin, Twitter, Mail } from 'lucide-react'
 
-const footerLinks = {
-  services: [
-    { name: 'Real Estate Tokenization', href: '/services/real-estate' },
-    { name: 'Mining & Metals Tokenization', href: '/services/mining-metals' },
-    { name: 'Agricultural Products Tokenization', href: '/services/agriculture' },
-    { name: 'Vehicles & Machinery Tokenization', href: '/services/vehicles' },
-    { name: 'Digital Sukuk & Securities', href: '/services/digital-sukuk' },
-    { name: 'Blockchain RWA Wallet', href: '/services/rwa-wallet' },
+const cols = {
+  Solutions: [
+    { name: 'Asset Tokenization', href: '/services/real-estate' },
+    { name: 'Investor Management', href: '/services/rwa-wallet' },
+    { name: 'Marketplace Enablement', href: '/services/digital-sukuk' },
+    { name: 'Compliance', href: '/technology' },
+    { name: 'Smart Contracts', href: '/technology/erc-3643' },
   ],
-  company: [
+  Industries: [
+    { name: 'Real Estate', href: '/services/real-estate' },
+    { name: 'Mining & Commodities', href: '/services/mining-metals' },
+    { name: 'Agriculture', href: '/services/agriculture' },
+    { name: 'Investment Funds', href: '/services/digital-sukuk' },
+    { name: 'Industrial Assets', href: '/services/vehicles' },
+  ],
+  Company: [
     { name: 'About Us', href: '/about' },
-    { name: 'Portfolio', href: '/portfolio' },
-    { name: 'Technology', href: '/technology' },
+    { name: 'Case Studies', href: '/portfolio' },
     { name: 'Blog', href: '/blog' },
     { name: 'Contact', href: '/contact' },
   ],
-  support: [
-    { name: 'Getting Started Guide', href: '/contact' },
-    { name: 'Free Consultation', href: 'calendly' },
-    { name: 'Price Inquiry', href: '/contact' },
-    { name: 'Technical Support', href: '/contact' },
-    { name: 'FAQs', href: '/contact' },
+  Resources: [
+    { name: 'Documentation', href: '/technology' },
+    { name: 'Help Center', href: '/contact' },
+    { name: 'API Reference', href: '/technology' },
   ],
-  social: [
-    { name: 'Phone', href: 'tel:+18003000000', icon: Phone },
-  ]
 }
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-900 text-white">
-      <div className="container mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {/* Company Info */}
+    <footer className="border-t border-slate-800" style={{ background: '#080c14' }}>
+      <div className="container mx-auto px-6 py-16">
+        <div className="grid lg:grid-cols-5 gap-12 mb-16">
+          {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center space-x-3 mb-4">
-              <Image
-                src="/images/icon-dark.png"
-                alt="Cirrariq logo"
-                width={40}
-                height={40}
-                className="w-10 h-10 object-contain"
-              />
-              <div>
-                <div className="text-xl font-bold tracking-wide">CIRRARIQ</div>
-                <div className="text-xs text-gray-400 tracking-wider uppercase">Infrastructure for Real-World Value</div>
-              </div>
-            </div>
-            <p className="text-gray-400 mb-6 leading-relaxed">
-              Tokenizing physical assets using blockchain technology. 
-              Convert your assets into digital tokens.
-            </p>
-            <div className="space-y-4">
-              <a
-                href="tel:+18003000000"
-                className="flex items-center text-gray-400 hover:text-white transition-colors duration-300"
-              >
-                <Phone className="w-5 h-5 mr-3" />
-                Phone: +1-800-CIRRARIQ
-              </a>
-              <CalendlyButton 
-                text="Schedule a Meeting" 
-                variant="outline" 
-                size="sm" 
-                className="text-gray-400 hover:text-white border-gray-400 hover:border-white"
-              />
+            <Link href="/" className="flex items-center gap-2 mb-4">
+              <Image src="/images/icon-light.png" alt="Cirrariq" width={32} height={32} className="w-8 h-8 object-contain" />
+              <span className="text-white font-bold tracking-wide">CIRRARIQ</span>
+            </Link>
+            <p className="text-slate-500 text-sm leading-relaxed mb-6">Infrastructure for Real-World Asset Tokenization</p>
+            <div className="flex gap-3">
+              {[
+                { icon: Linkedin, href: '#' },
+                { icon: Twitter, href: '#' },
+                { icon: Mail, href: 'mailto:hello@cirrariq.io' },
+              ].map(({ icon: Icon, href }) => (
+                <a key={href} href={href} className="w-8 h-8 rounded-lg border border-slate-700 hover:border-slate-500 flex items-center justify-center text-slate-500 hover:text-white transition-all">
+                  <Icon className="w-3.5 h-3.5" />
+                </a>
+              ))}
             </div>
           </div>
 
-          {/* Services */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Our Services</h3>
-            <ul className="space-y-3">
-              {footerLinks.services.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Company */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Company</h3>
-            <ul className="space-y-3">
-              {footerLinks.company.map((link) => (
-                <li key={link.name}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-400 hover:text-white transition-colors duration-300"
-                  >
-                    {link.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-
-          {/* Support */}
-          <div>
-            <h3 className="text-lg font-semibold mb-6">Support</h3>
-            <ul className="space-y-3">
-              {footerLinks.support.map((link) => (
-                <li key={link.name}>
-                  {link.href === 'calendly' ? (
-                    <CalendlyButton 
-                      text={link.name}
-                      variant="link"
-                      size="sm"
-                      className="text-gray-400 hover:text-white p-0 h-auto font-normal"
-                    />
-                  ) : (
-                    <Link
-                      href={link.href}
-                      className="text-gray-400 hover:text-white transition-colors duration-300"
-                    >
-                      {link.name}
-                    </Link>
-                  )}
-                </li>
-              ))}
-            </ul>
-          </div>
-
+          {/* Links */}
+          {Object.entries(cols).map(([title, links]) => (
+            <div key={title}>
+              <div className="text-white font-semibold text-sm mb-4">{title}</div>
+              <ul className="space-y-3">
+                {links.map((l) => (
+                  <li key={l.name}>
+                    <Link href={l.href} className="text-slate-500 hover:text-slate-300 text-sm transition-colors">{l.name}</Link>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          ))}
         </div>
 
-        {/* Bottom Section */}
-        <div className="border-t border-gray-800 mt-12 pt-8">
-          <div className="flex flex-col md:flex-row justify-between items-center">
-            <div className="text-gray-400 text-sm mb-4 md:mb-0">
-              © 2024 Cirrariq - All rights reserved
-            </div>
-            <div className="flex items-center space-x-6 text-sm text-gray-400">
-              <span>Designed & developed by</span>
-              <a
-                href="https://miroteam.ir"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="flex items-center hover:text-white transition-colors duration-300 font-semibold"
-              >
-                MiroTeam
-                <ExternalLink className="w-4 h-4 ml-1" />
-              </a>
-            </div>
+        {/* Contact block */}
+        <div className="border-t border-slate-800 pt-8 flex flex-col lg:flex-row items-center justify-between gap-4">
+          <div className="text-slate-600 text-sm">© 2024 CIRRARIQ. All rights reserved.</div>
+          <div className="flex items-center gap-6 text-slate-500 text-sm">
+            <span>hello@cirrariq.io</span>
+            <span>+1 (555) 123-4567</span>
+            <span>London, UK</span>
           </div>
         </div>
       </div>

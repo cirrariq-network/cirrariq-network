@@ -8,23 +8,31 @@ import CalendlyButton from './CalendlyButton'
 import { motion, AnimatePresence } from 'framer-motion'
 
 const navigation = [
-  { name: 'Home', href: '/' },
-  { 
-    name: 'Services', 
+  {
+    name: 'Solutions',
     href: '/services',
     submenu: [
-      { name: 'Real Estate Tokenization', href: '/services/real-estate' },
-      { name: 'Mining & Metals Tokenization', href: '/services/mining-metals' },
-      { name: 'Agricultural Products Tokenization', href: '/services/agriculture' },
-      { name: 'Vehicles & Machinery Tokenization', href: '/services/vehicles' },
-      { name: 'Digital Sukuk & Securities', href: '/services/digital-sukuk' },
-      { name: 'Blockchain RWA Wallet', href: '/services/rwa-wallet' },
+      { name: 'Asset Tokenization', href: '/services/real-estate' },
+      { name: 'Investor Management', href: '/services/rwa-wallet' },
+      { name: 'Marketplace Enablement', href: '/services/digital-sukuk' },
+      { name: 'Compliance Layer', href: '/technology' },
+      { name: 'Smart Contracts', href: '/technology/erc-3643' },
     ]
   },
-  { name: 'Portfolio', href: '/portfolio' },
+  {
+    name: 'Industries',
+    href: '/services',
+    submenu: [
+      { name: 'Real Estate', href: '/services/real-estate' },
+      { name: 'Mining & Commodities', href: '/services/mining-metals' },
+      { name: 'Agriculture', href: '/services/agriculture' },
+      { name: 'Investment Funds', href: '/services/digital-sukuk' },
+      { name: 'Industrial Assets', href: '/services/vehicles' },
+    ]
+  },
   { name: 'Technology', href: '/technology' },
-  { name: 'Blog', href: '/blog' },
-  { name: 'About Us', href: '/about' },
+  { name: 'Case Studies', href: '/portfolio' },
+  { name: 'About', href: '/about' },
   { name: 'Contact', href: '/contact' },
 ]
 
@@ -33,61 +41,61 @@ export default function Header() {
   const [activeSubmenu, setActiveSubmenu] = useState<string | null>(null)
 
   return (
-    <header className="bg-white shadow-lg sticky top-0 z-50">
-      <div className="container mx-auto px-4">
-        <div className="flex items-center h-16">
+    <header className="sticky top-0 z-50 border-b border-slate-800/80 backdrop-blur-xl" style={{ background: 'rgba(8,12,20,0.92)' }}>
+      <div className="container mx-auto px-6">
+        <div className="flex items-center h-16 gap-8">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-3 flex-shrink-0">
+          <Link href="/" className="flex items-center gap-3 flex-shrink-0">
             <Image
               src="/images/icon-light.png"
-              alt="Cirrariq logo"
-              width={40}
-              height={40}
-              className="w-10 h-10 object-contain"
+              alt="Cirrariq"
+              width={36}
+              height={36}
+              className="w-9 h-9 object-contain"
               priority
             />
-            <div className="hidden sm:block">
-              <div className="text-xl font-bold text-gray-900 tracking-wide">CIRRARIQ</div>
-              <div className="text-xs text-gray-500 tracking-wider uppercase">Infrastructure for Real-World Value</div>
-            </div>
+            <span className="text-white font-bold text-lg tracking-wide">CIRRARIQ</span>
           </Link>
 
-          {/* Desktop Navigation - Centered */}
-          <nav className="hidden lg:flex items-center space-x-8 flex-1 justify-center">
+          {/* Desktop Nav */}
+          <nav className="hidden lg:flex items-center gap-1 flex-1 justify-center">
             {navigation.map((item) => (
-              <div key={item.name} className="relative group">
+              <div key={item.name} className="relative"
+                onMouseEnter={() => setActiveSubmenu(item.name)}
+                onMouseLeave={() => setActiveSubmenu(null)}
+              >
                 <Link
                   href={item.href}
-                  className="flex items-center text-gray-700 hover:text-blue-600 transition-colors duration-300 font-medium px-3 py-2"
-                  onMouseEnter={() => setActiveSubmenu(item.name)}
-                  onMouseLeave={() => setActiveSubmenu(null)}
+                  className={`flex items-center gap-1 px-4 py-2 rounded-lg text-sm font-medium transition-all duration-200 ${
+                    activeSubmenu === item.name
+                      ? 'text-white bg-slate-800'
+                      : 'text-slate-400 hover:text-white hover:bg-slate-800/60'
+                  }`}
                 >
                   {item.name}
                   {item.submenu && (
-                    <ChevronDown className="w-4 h-4 ml-1 group-hover:rotate-180 transition-transform duration-300" />
+                    <ChevronDown className={`w-3.5 h-3.5 transition-transform duration-200 ${activeSubmenu === item.name ? 'rotate-180' : ''}`} />
                   )}
                 </Link>
 
-                {/* Submenu */}
                 {item.submenu && (
                   <AnimatePresence>
                     {activeSubmenu === item.name && (
                       <motion.div
-                        initial={{ opacity: 0, y: 10 }}
+                        initial={{ opacity: 0, y: 6 }}
                         animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: 10 }}
-                        transition={{ duration: 0.2 }}
-                        className="absolute top-full left-0 mt-2 w-72 bg-white rounded-lg shadow-xl border border-gray-100 py-2 z-50"
-                        onMouseEnter={() => setActiveSubmenu(item.name)}
-                        onMouseLeave={() => setActiveSubmenu(null)}
+                        exit={{ opacity: 0, y: 6 }}
+                        transition={{ duration: 0.15 }}
+                        className="absolute top-full left-0 mt-1 w-64 rounded-xl shadow-2xl py-2 z-50 border border-slate-700/60"
+                        style={{ background: '#0f1623' }}
                       >
-                        {item.submenu.map((subItem) => (
+                        {item.submenu.map((sub) => (
                           <Link
-                            key={subItem.name}
-                            href={subItem.href}
-                            className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
+                            key={sub.name}
+                            href={sub.href}
+                            className="block px-4 py-2.5 text-sm text-slate-400 hover:text-white hover:bg-slate-800/60 transition-colors"
                           >
-                            {subItem.name}
+                            {sub.name}
                           </Link>
                         ))}
                       </motion.div>
@@ -98,71 +106,49 @@ export default function Header() {
             ))}
           </nav>
 
-          {/* CTA Button - Right side */}
+          {/* CTA */}
           <div className="hidden lg:flex items-center flex-shrink-0">
-            <CalendlyButton 
-              text="Free Consultation" 
-              variant="primary" 
-              size="md" 
-              className="bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 hover:from-cyan-500 hover:via-blue-700 hover:to-indigo-700 px-6 py-2"
+            <CalendlyButton
+              text="Book a Demo"
+              variant="primary"
+              size="md"
+              className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2 rounded-lg text-sm"
             />
           </div>
 
-          {/* Mobile menu button */}
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="lg:hidden ml-auto p-2 rounded-md text-gray-700 hover:text-blue-600 hover:bg-gray-100 transition-colors duration-300"
-          >
-            {isOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+          {/* Mobile menu */}
+          <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden ml-auto p-2 text-slate-400 hover:text-white">
+            {isOpen ? <X className="w-5 h-5" /> : <Menu className="w-5 h-5" />}
           </button>
         </div>
 
-        {/* Mobile Navigation */}
+        {/* Mobile Nav */}
         <AnimatePresence>
           {isOpen && (
             <motion.div
               initial={{ opacity: 0, height: 0 }}
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
-              transition={{ duration: 0.3 }}
-              className="lg:hidden border-t border-gray-200"
+              className="lg:hidden border-t border-slate-800 py-4 space-y-1"
             >
-              <div className="py-4 space-y-2">
-                {navigation.map((item) => (
-                  <div key={item.name}>
-                    <Link
-                      href={item.href}
-                      className="block px-4 py-3 text-gray-700 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200 font-medium"
-                      onClick={() => setIsOpen(false)}
-                    >
-                      {item.name}
-                    </Link>
-                    {item.submenu && (
-                      <div className="pl-8 space-y-1">
-                        {item.submenu.map((subItem) => (
-                          <Link
-                            key={subItem.name}
-                            href={subItem.href}
-                            className="block px-4 py-2 text-sm text-gray-600 hover:bg-blue-50 hover:text-blue-600 transition-colors duration-200"
-                            onClick={() => setIsOpen(false)}
-                          >
-                            {subItem.name}
-                          </Link>
-                        ))}
-                      </div>
-                    )}
-                  </div>
-                ))}
-                <div className="px-4 pt-4">
-                  <div className="w-full">
-                    <CalendlyButton 
-                      text="Free Consultation" 
-                      variant="primary" 
-                      size="lg" 
-                      className="w-full bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 hover:from-cyan-500 hover:via-blue-700 hover:to-indigo-700 px-6 py-3"
-                    />
-                  </div>
+              {navigation.map((item) => (
+                <div key={item.name}>
+                  <Link href={item.href} className="block px-4 py-2.5 text-slate-300 hover:text-white hover:bg-slate-800 rounded-lg text-sm font-medium" onClick={() => setIsOpen(false)}>
+                    {item.name}
+                  </Link>
+                  {item.submenu && (
+                    <div className="pl-6 space-y-1 mt-1">
+                      {item.submenu.map((sub) => (
+                        <Link key={sub.name} href={sub.href} className="block px-4 py-2 text-slate-500 hover:text-slate-300 text-sm" onClick={() => setIsOpen(false)}>
+                          {sub.name}
+                        </Link>
+                      ))}
+                    </div>
+                  )}
                 </div>
+              ))}
+              <div className="px-4 pt-3">
+                <CalendlyButton text="Book a Demo" variant="primary" size="md" className="w-full bg-blue-600 hover:bg-blue-500 text-white rounded-lg text-sm font-semibold py-2.5" />
               </div>
             </motion.div>
           )}

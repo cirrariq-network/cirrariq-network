@@ -155,7 +155,7 @@ export default function BlogClient() {
   const featuredArticles = articles.filter(a => a.featured)
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-[#03050f] via-blue-950 to-cyan-950">
+    <div className="min-h-screen bg-gradient-to-br [#080c14]">
       {/* Hero */}
       <div className="py-20 px-4">
         <div className="container mx-auto text-center">
@@ -169,7 +169,7 @@ export default function BlogClient() {
               placeholder="Search articles..."
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
-              className="w-full px-6 py-4 rounded-2xl bg-white/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-400"
+              className="w-full px-6 py-4 rounded-2xl bg-[#0e1420]/10 border border-white/20 text-white placeholder-white/50 focus:outline-none focus:ring-2 focus:ring-blue-400"
             />
           </div>
         </div>
@@ -220,7 +220,7 @@ export default function BlogClient() {
               onClick={() => setSelectedCategory(cat)}
               className={`px-4 py-2 rounded-full text-sm font-medium transition-all duration-300 ${
                 selectedCategory === cat
-                  ? 'bg-blue-500 text-white'
+                  ? 'bg-blue-900/200 text-white'
                   : 'bg-white/10 text-gray-300 hover:bg-white/20 hover:text-white border border-white/20'
               }`}
             >
@@ -240,7 +240,7 @@ export default function BlogClient() {
                 <div className="relative h-48">
                   <Image src={article.image} alt={article.title} fill className="object-cover" />
                   <div className="absolute top-4 left-4">
-                    <span className="bg-blue-500 text-white px-3 py-1 rounded-full text-sm font-medium">{article.category}</span>
+                    <span className="bg-blue-900/200 text-white px-3 py-1 rounded-full text-sm font-medium">{article.category}</span>
                   </div>
                 </div>
                 <div className="p-6">
@@ -269,7 +269,7 @@ export default function BlogClient() {
           <h2 className="text-3xl font-bold text-white mb-4">Ready to Tokenize Your Assets?</h2>
           <p className="text-xl text-gray-300 mb-8">Contact our expert team and get a free consultation.</p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105">
+            <Link href="/contact" className="bg-blue-900/200 hover:bg-blue-600 text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105">
               Contact Us
             </Link>
             <Link href="/services" className="border border-blue-400 text-blue-400 hover:bg-blue-400 hover:text-white px-8 py-4 rounded-xl font-bold text-lg transition-all duration-300 hover:scale-105">

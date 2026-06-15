@@ -88,7 +88,7 @@ const useCases = [
 
 export default function BlogArticlePage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Article Header */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -141,13 +141,13 @@ export default function BlogArticlePage() {
             {/* Table of Contents */}
             <div className="lg:col-span-1">
               <div className="sticky top-8">
-                <h3 className="text-lg font-bold text-gray-900 mb-4">Table of Contents</h3>
+                <h3 className="text-lg font-bold text-white mb-4">Table of Contents</h3>
                 <nav className="space-y-2">
                   {tableOfContents.map((item, index) => (
                     <a
                       key={index}
                       href={`#${item.id}`}
-                      className="block text-sm text-gray-600 hover:text-blue-600 transition-colors py-1"
+                      className="block text-sm text-slate-400 hover:text-blue-400 transition-colors py-1"
                     >
                       {item.title}
                     </a>
@@ -161,13 +161,13 @@ export default function BlogArticlePage() {
               <article className="prose prose-lg max-w-none">
                 {/* Introduction */}
                 <section id="introduction" className="mb-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h2>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  <h2 className="text-3xl font-bold text-white mb-6">Introduction</h2>
+                  <p className="text-lg text-slate-300 leading-relaxed mb-6">
                     In today&apos;s world, blockchain technology has created new opportunities for investment and ownership of assets. 
                     One of the most important of these opportunities is Real-World Asset Tokenization (RWA), which enables 
                     the conversion of any physical asset into a tradeable digital token.
                   </p>
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-lg text-slate-300 leading-relaxed">
                     This technology has not only revolutionized how assets are owned and traded, but has also opened up access to 
                     high-value investments for the general public.
                   </p>
@@ -175,15 +175,15 @@ export default function BlogArticlePage() {
 
                 {/* What is RWA */}
                 <section id="what-is-rwa" className="mb-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is Real-World Asset Tokenization?</h2>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  <h2 className="text-3xl font-bold text-white mb-6">What Is Real-World Asset Tokenization?</h2>
+                  <p className="text-lg text-slate-300 leading-relaxed mb-6">
                     Real-World Asset Tokenization is a process in which a physical asset (such as property, gold, or agricultural products)roducts) 
                     is converted into tradeable digital tokens. Each token represents a share of ownership in that asset.
                   </p>
                   
-                  <div className="bg-blue-50 border-r-4 border-blue-500 p-6 mb-6">
+                  <div className="bg-blue-900/20 border-r-4 border-blue-500 p-6 mb-6">
                     <h3 className="text-lg font-semibold text-blue-900 mb-2">Practical Example</h3>
-                    <p className="text-blue-800">
+                    <p className="text-blue-300">
                       Imagine you own a building worth $10 million. With tokenization, you can divide it into 1,000 tokens, 
                       where each token represents 0.1% ownership of the building. Now anyone can purchase 
                       one or more tokens and own a portion of that building.
@@ -193,8 +193,8 @@ export default function BlogArticlePage() {
 
                 {/* How it works */}
                 <section id="how-it-works" className="mb-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">How Does It Work?</h2>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  <h2 className="text-3xl font-bold text-white mb-6">How Does It Work?</h2>
+                  <p className="text-lg text-slate-300 leading-relaxed mb-6">
                     The tokenization process includes the following steps:
                   </p>
                   
@@ -231,8 +231,8 @@ export default function BlogArticlePage() {
                           {item.step}
                         </div>
                         <div>
-                          <h3 className="text-lg font-semibold text-gray-900 mb-2">{item.title}</h3>
-                          <p className="text-gray-700">{item.description}</p>
+                          <h3 className="text-lg font-semibold text-white mb-2">{item.title}</h3>
+                          <p className="text-slate-300">{item.description}</p>
                         </div>
                       </div>
                     ))}
@@ -241,8 +241,8 @@ export default function BlogArticlePage() {
 
                 {/* Benefits */}
                 <section id="benefits" className="mb-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">Benefits of Tokenization</h2>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Benefits of Tokenization</h2>
+                  <p className="text-lg text-slate-300 leading-relaxed mb-8">
                     Real-World Asset Tokenization has numerous benefits for asset holders and investors:
                   </p>
                   
@@ -250,8 +250,8 @@ export default function BlogArticlePage() {
                     {benefits.map((benefit, index) => (
                       <div key={index} className="bg-white p-6 rounded-2xl shadow-lg">
                         <div className="text-4xl mb-4">{benefit.icon}</div>
-                        <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
-                        <p className="text-gray-700">{benefit.description}</p>
+                        <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
+                        <p className="text-slate-300">{benefit.description}</p>
                       </div>
                     ))}
                   </div>
@@ -259,19 +259,19 @@ export default function BlogArticlePage() {
 
                 {/* Use Cases */}
                 <section id="use-cases" className="mb-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">Use Cases</h2>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                  <h2 className="text-3xl font-bold text-white mb-6">Use Cases</h2>
+                  <p className="text-lg text-slate-300 leading-relaxed mb-8">
                     Tokenization has applications in various domains:
                   </p>
                   
                   <div className="space-y-8">
                     {useCases.map((useCase, index) => (
                       <div key={index} className="bg-white p-6 rounded-2xl shadow-lg">
-                        <h3 className="text-xl font-bold text-gray-900 mb-4">{useCase.category}</h3>
-                        <p className="text-gray-700 mb-4">{useCase.description}</p>
+                        <h3 className="text-xl font-bold text-white mb-4">{useCase.category}</h3>
+                        <p className="text-slate-300 mb-4">{useCase.description}</p>
                         <div className="flex flex-wrap gap-2">
                           {useCase.examples.map((example, exampleIndex) => (
-                            <span key={exampleIndex} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">
+                            <span key={exampleIndex} className="bg-blue-100 text-blue-300 px-3 py-1 rounded-full text-sm">
                               {example}
                             </span>
                           ))}
@@ -283,30 +283,30 @@ export default function BlogArticlePage() {
 
                 {/* Future */}
                 <section id="future" className="mb-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">Future of RWA Tokenization</h2>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  <h2 className="text-3xl font-bold text-white mb-6">Future of RWA Tokenization</h2>
+                  <p className="text-lg text-slate-300 leading-relaxed mb-6">
                     The future of Real-World Asset Tokenization is very bright. It is projected that by 2030, 
                     the RWA market value will exceed $10 trillion.
                   </p>
                   
                   <div className="bg-gradient-to-r from-blue-50 to-purple-50 p-8 rounded-2xl">
-                    <h3 className="text-xl font-bold text-gray-900 mb-4">Key Future Trends:</h3>
+                    <h3 className="text-xl font-bold text-white mb-4">Key Future Trends:</h3>
                     <ul className="space-y-3">
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">Deeper integration with DeFi protocols</span>
+                        <span className="text-slate-300">Deeper integration with DeFi protocols</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">Widespread adoption by traditional financial institutions</span>
+                        <span className="text-slate-300">Widespread adoption by traditional financial institutions</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">Development of new and improved standards</span>
+                        <span className="text-slate-300">Development of new and improved standards</span>
                       </li>
                       <li className="flex items-start">
                         <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                        <span className="text-gray-700">Creation of appropriate laws and regulations</span>
+                        <span className="text-slate-300">Creation of appropriate laws and regulations</span>
                       </li>
                     </ul>
                   </div>
@@ -314,13 +314,13 @@ export default function BlogArticlePage() {
 
                 {/* Conclusion */}
                 <section id="conclusion" className="mb-12">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">Conclusion</h2>
-                  <p className="text-lg text-gray-700 leading-relaxed mb-6">
+                  <h2 className="text-3xl font-bold text-white mb-6">Conclusion</h2>
+                  <p className="text-lg text-slate-300 leading-relaxed mb-6">
                     Real-World Asset Tokenization is a unique opportunity to democratize investment and create liquidity 
                     for illiquid assets. This technology, through the use of blockchain, brings transparency, security, and 
                     global access to the world.
                   </p>
-                  <p className="text-lg text-gray-700 leading-relaxed">
+                  <p className="text-lg text-slate-300 leading-relaxed">
                     If you have assets you want to tokenize, or as an investor are looking for 
                     new opportunities, contact our expert team at Cirrariq.
                   </p>
@@ -334,13 +334,13 @@ export default function BlogArticlePage() {
                 <div className="flex flex-col sm:flex-row gap-4 justify-center">
                   <Link 
                     href="/contact"
-                    className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300"
+                    className="bg-white text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300"
                   >
                     Free Consultation
                   </Link>
                   <Link 
                     href="/services"
-                    className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
+                    className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-400 transition-all duration-300"
                   >
                     View Services
                   </Link>

@@ -1,147 +1,87 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { DollarSign, Globe, Shield, Zap, Users, BarChart3 } from 'lucide-react'
-import CalendlyButton from './CalendlyButton'
+import { Building2, Pickaxe, Wheat, PieChart, TrendingUp, Factory } from 'lucide-react'
 
-const benefits = [
-  {
-    icon: DollarSign,
-    title: 'High Liquidity',
-    description: 'Convert illiquid assets into tradeable assets on global markets.',
-    stat: 'Up to 300% liquidity increase'
-  },
-  {
-    icon: Globe,
-    title: 'Global Access',
-    description: 'Investors from around the world can access your assets.',
-    stat: '24/7 global trading'
-  },
-  {
-    icon: Shield,
-    title: 'High Security',
-    description: 'Secure and transparent smart contracts with international standards.',
-    stat: '100% blockchain security'
-  },
-  {
-    icon: Zap,
-    title: 'Fast Execution',
-    description: 'Rapid tokenization process with minimal fees.',
-    stat: 'Quick tokenization'
-  },
-  {
-    icon: Users,
-    title: 'Fractional Ownership',
-    description: 'Divide high-value assets among multiple investors.',
-    stat: 'Up to 1,000 shares'
-  },
-  {
-    icon: BarChart3,
-    title: 'Transparency',
-    description: 'All transactions and ownership records are stored on blockchain.',
-    stat: '100% transparency'
-  }
+const assets = [
+  { icon: Building2, label: 'Real Estate', color: '#3b82f6' },
+  { icon: Pickaxe, label: 'Mining &\nCommodities', color: '#22d3ee' },
+  { icon: Wheat, label: 'Agriculture', color: '#10b981' },
+  { icon: PieChart, label: 'Private Equity', color: '#8b5cf6' },
+  { icon: TrendingUp, label: 'Investment Funds', color: '#f59e0b' },
+  { icon: Factory, label: 'Industrial Assets', color: '#06b6d4' },
 ]
 
-const stats = [
-  { number: '$2.5M', label: 'Tokenized Assets Value (USD)' },
-  { number: '47', label: 'Total Assets Tokenized' },
-  { number: '18.5%', label: 'Average Annual Return' }
+const steps = [
+  { n: '1', title: 'Asset Evaluation', desc: 'Review legal and ownership structures.' },
+  { n: '2', title: 'Token Design', desc: 'Define token economics and ownership model.' },
+  { n: '3', title: 'Compliance Setup', desc: 'Configure investor eligibility and regulations.' },
+  { n: '4', title: 'Smart Contract Deployment', desc: 'Launch audited token infrastructure.' },
+  { n: '5', title: 'Investor Onboarding', desc: 'Begin fundraising and asset distribution.' },
 ]
 
 export default function WhyTokenize() {
   return (
-    <section className="py-20 bg-gradient-to-br from-blue-50 to-indigo-50">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Why Tokenize?
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Tokenizing physical assets offers countless benefits for both asset holders and investors.
-          </p>
-        </motion.div>
-
-        {/* Stats */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          viewport={{ once: true }}
-          className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-16"
-        >
-          {stats.map((stat, index) => (
-            <div key={index} className="text-center">
-              <div className="bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 text-white rounded-2xl p-6 mb-4">
-                <div className="text-3xl md:text-4xl font-bold">{stat.number}</div>
-              </div>
-              <div className="text-gray-600 font-semibold">{stat.label}</div>
-            </div>
-          ))}
-        </motion.div>
-
-        {/* Benefits Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {benefits.map((benefit, index) => (
-            <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              className="group"
-            >
-              <div className="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-lg transition-all duration-300 group-hover:-translate-y-1 border border-gray-100 h-full">
-                <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <benefit.icon className="w-8 h-8 text-white" />
-                </div>
-                
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
-                  {benefit.title}
-                </h3>
-                
-                <p className="text-gray-600 mb-4 leading-relaxed">
-                  {benefit.description}
-                </p>
-                
-                <div className="text-blue-600 font-semibold text-sm">
-                  {benefit.stat}
-                </div>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="text-center mt-16"
-        >
-          <div className="bg-gradient-to-r from-green-600 to-teal-600 rounded-3xl p-12 text-white">
-            <h3 className="text-3xl font-bold mb-4">
-              Ready to Tokenize Your Assets?
-            </h3>
-            <p className="text-xl text-green-100 mb-8 max-w-2xl mx-auto">
-              With our free consultation, find the right tokenization solution for your assets.
-            </p>
-            <CalendlyButton 
-              text="Get Free Consultation" 
-              variant="secondary" 
-              size="lg" 
-              className="bg-white text-green-600 hover:bg-gray-100"
-            />
+    <>
+      {/* Assets we support */}
+      <section className="py-24 border-t border-slate-800/50" style={{ background: '#0a0f1a' }}>
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-14">
+            <div className="section-label">Assets We Support</div>
+            <h2 className="text-4xl font-bold text-white">Tokenize Any Real-World Asset</h2>
           </div>
-        </motion.div>
-      </div>
-    </section>
+          <div className="grid grid-cols-3 lg:grid-cols-6 gap-6">
+            {assets.map((a, i) => (
+              <motion.div
+                key={a.label}
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.4, delay: i * 0.07 }}
+                viewport={{ once: true }}
+                className="flex flex-col items-center gap-3 text-center"
+              >
+                <div className="w-16 h-16 rounded-2xl flex items-center justify-center border border-slate-700 hover:border-slate-500 transition-colors" style={{ background: '#0e1420' }}>
+                  <a.icon className="w-7 h-7" style={{ color: a.color }} />
+                </div>
+                <span className="text-slate-400 text-sm whitespace-pre-line leading-snug">{a.label}</span>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Process */}
+      <section className="py-24 border-t border-slate-800/50" style={{ background: '#080c14' }}>
+        <div className="container mx-auto px-6">
+          <div className="text-center mb-14">
+            <div className="section-label">From Asset to Digital Market</div>
+            <h2 className="text-4xl font-bold text-white">Our Proven Process</h2>
+          </div>
+
+          {/* Step connector line */}
+          <div className="relative">
+            <div className="hidden lg:block absolute top-6 left-0 right-0 h-px bg-slate-800 mx-24" />
+            <div className="grid grid-cols-1 md:grid-cols-5 gap-8 relative z-10">
+              {steps.map((step, i) => (
+                <motion.div
+                  key={step.n}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.5, delay: i * 0.1 }}
+                  viewport={{ once: true }}
+                  className="flex flex-col items-center text-center"
+                >
+                  <div className="w-12 h-12 rounded-full bg-blue-600 text-white font-bold text-lg flex items-center justify-center mb-5 border-2 border-blue-400 shadow-lg shadow-blue-900/40">
+                    {step.n}
+                  </div>
+                  <h3 className="text-white font-semibold text-sm mb-2">{step.title}</h3>
+                  <p className="text-slate-500 text-xs leading-relaxed">{step.desc}</p>
+                </motion.div>
+              ))}
+            </div>
+          </div>
+        </div>
+      </section>
+    </>
   )
 }

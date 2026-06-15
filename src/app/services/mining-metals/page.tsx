@@ -108,7 +108,7 @@ const process = [
 
 export default function MiningMetalsPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero Section */}
       <section className="bg-gradient-to-r from-yellow-600 via-orange-600 to-red-600 py-20">
         <div className="container mx-auto px-4">
@@ -141,10 +141,10 @@ export default function MiningMetalsPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl font-bold text-white mb-6">
               Tokenizable Metals & Mining Assets
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Types of Precious Metals & Various Mining Assets
             </p>
           </div>
@@ -156,16 +156,16 @@ export default function MiningMetalsPage() {
                   <Gem className="w-8 h-8 text-white" />
                 </div>
                 
-                <h3 className="text-2xl font-bold text-gray-900 mb-2">{metal.name}</h3>
-                <div className="text-blue-600 font-semibold mb-4">{metal.symbol}</div>
+                <h3 className="text-2xl font-bold text-white mb-2">{metal.name}</h3>
+                <div className="text-blue-400 font-semibold mb-4">{metal.symbol}</div>
                 
-                <p className="text-gray-600 mb-6 leading-relaxed">
+                <p className="text-slate-400 mb-6 leading-relaxed">
                   {metal.description}
                 </p>
 
                 <div className="space-y-2">
                   {metal.features.map((feature, featureIndex) => (
-                    <div key={featureIndex} className="flex items-center text-sm text-gray-600">
+                    <div key={featureIndex} className="flex items-center text-sm text-slate-400">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                       {feature}
                     </div>
@@ -178,35 +178,35 @@ export default function MiningMetalsPage() {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0e1420]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl font-bold text-white mb-6">
               Key Features
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Advanced Capabilities for Metals & Mining Asset Tokenization
             </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {features.map((feature, index) => (
-              <div key={index} className="bg-gray-50 rounded-2xl p-8 hover:bg-white hover:shadow-lg transition-all duration-300">
+              <div key={index} className="bg-[#0a0f1a] rounded-2xl p-8 hover:bg-white hover:shadow-lg transition-all duration-300">
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center mb-6">
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl font-bold text-white mb-4">
                   {feature.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-slate-400 mb-4 leading-relaxed">
                   {feature.description}
                 </p>
 
                 <div className="space-y-2">
                   {feature.details.map((detail, detailIndex) => (
-                    <div key={detailIndex} className="flex items-center text-sm text-gray-600">
+                    <div key={detailIndex} className="flex items-center text-sm text-slate-400">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                       {detail}
                     </div>
@@ -219,13 +219,13 @@ export default function MiningMetalsPage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#0a0f1a]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl font-bold text-white mb-6">
               Metals Tokenization Process
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Steps to Convert Metals & Mining Assets into Digital Tokens
             </p>
           </div>
@@ -236,10 +236,10 @@ export default function MiningMetalsPage() {
                 <div className="w-16 h-16 bg-gradient-to-r from-yellow-500 to-orange-500 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   {step.step}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-white mb-2">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-slate-400 text-sm">
                   {step.description}
                 </p>
               </div>
@@ -249,40 +249,40 @@ export default function MiningMetalsPage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0e1420]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl font-bold text-white mb-6">
                 Why Tokenize Metals?
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
                   <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">High Liquidity</h3>
-                    <p className="text-gray-600">Converting physical assets into tradeable assets</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">High Liquidity</h3>
+                    <p className="text-slate-400">Converting physical assets into tradeable assets</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Transparent pricing</h3>
-                    <p className="text-gray-600">Global market-based pricing</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">Transparent pricing</h3>
+                    <p className="text-slate-400">Global market-based pricing</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">High Security</h3>
-                    <p className="text-gray-600">Secure and insured storage</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">High Security</h3>
+                    <p className="text-slate-400">Secure and insured storage</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Global Access</h3>
-                    <p className="text-gray-600">Trading on international markets</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">Global Access</h3>
+                    <p className="text-slate-400">Trading on international markets</p>
                   </div>
                 </div>
               </div>

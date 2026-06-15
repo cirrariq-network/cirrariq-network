@@ -1,27 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
-  --cirrariq-navy: #03050f;
+  --bg-base: #080c14;
+  --bg-card: #0e1420;
+  --bg-card-border: #1a2235;
+  --bg-elevated: #111827;
+  --accent-cyan: #22d3ee;
+  --accent-blue: #3b82f6;
+  --accent-indigo: #6366f1;
+  --text-primary: #f1f5f9;
+  --text-secondary: #94a3b8;
+  --text-muted: #475569;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --color-background: var(--bg-base);
+  --color-foreground: var(--text-primary);
   --font-sans: var(--font-geist-sans);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
+  background: var(--bg-base);
+  color: var(--text-primary);
   font-family: var(--font-geist-sans), system-ui, sans-serif;
   direction: ltr;
   text-align: left;
@@ -29,26 +29,23 @@ body {
 
 @layer components {
   .gradient-text {
-    @apply bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-cyan-400 via-blue-400 to-indigo-400 bg-clip-text text-transparent;
   }
-
-  .gradient-bg {
-    @apply bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600;
+  .btn-primary {
+    @apply bg-blue-600 hover:bg-blue-500 text-white font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 inline-flex items-center gap-2;
   }
-
-  .gradient-bg-hover {
-    @apply hover:from-cyan-500 hover:via-blue-700 hover:to-indigo-700;
+  .btn-outline {
+    @apply border border-slate-600 hover:border-slate-400 text-slate-300 hover:text-white font-semibold px-5 py-2.5 rounded-lg transition-all duration-200 inline-flex items-center gap-2;
   }
-
-  .hero-gradient {
-    @apply bg-gradient-to-br from-[#03050f] via-blue-950 to-cyan-950;
+  .card-dark {
+    background: var(--bg-card);
+    border: 1px solid var(--bg-card-border);
+    @apply rounded-xl;
   }
-
-  .glass-effect {
-    @apply bg-white/10 backdrop-blur-sm border border-white/20;
+  .section-label {
+    @apply text-xs font-bold tracking-[0.2em] uppercase text-cyan-400 mb-3;
   }
-
-  .card-hover {
-    @apply hover:shadow-2xl hover:-translate-y-2 transition-all duration-300;
+  .glow-blue {
+    box-shadow: 0 0 40px rgba(59, 130, 246, 0.15);
   }
 }

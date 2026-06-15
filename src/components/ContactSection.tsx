@@ -1,70 +1,47 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Phone, Clock } from 'lucide-react'
+import { Phone, Mail, MapPin } from 'lucide-react'
+import CalendlyButton from './CalendlyButton'
 
 export default function ContactSection() {
   return (
-    <section className="py-20 bg-gradient-to-br from-[#03050f] via-blue-950 to-cyan-950">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Free Consultation & Price Inquiry
-          </h2>
-          <p className="text-xl text-blue-100 max-w-3xl mx-auto">
-            Our expert team is ready to guide you on your real-world asset tokenization journey.
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
-          {/* Contact Info */}
-          <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="space-y-8"
-          >
-            <div>
-              <h3 className="text-2xl font-bold text-white mb-6">
-                Ways to Reach Us
-              </h3>
-              <p className="text-blue-100 leading-relaxed">
-                For consultation and guidance on tokenizing physical assets, 
-                get in touch with us.
-              </p>
+    <section className="py-24 border-t border-slate-800" style={{ background: '#0a0f1a' }}>
+      <div className="container mx-auto px-6">
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-5xl mx-auto">
+          <motion.div initial={{ opacity: 0, x: -20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6 }} viewport={{ once: true }}>
+            <div className="section-label">Get In Touch</div>
+            <h2 className="text-3xl font-bold text-white mb-4">Ready to Tokenize Your Assets?</h2>
+            <p className="text-slate-400 mb-8 leading-relaxed">Book a free consultation with our team and discover how Cirrariq can power your RWA project.</p>
+            <div className="space-y-4">
+              {[
+                { icon: Mail, text: 'hello@cirrariq.io' },
+                { icon: Phone, text: '+1 (555) 123-4567' },
+                { icon: MapPin, text: 'London, UK' },
+              ].map(({ icon: Icon, text }) => (
+                <div key={text} className="flex items-center gap-3 text-slate-400">
+                  <div className="w-9 h-9 rounded-lg bg-slate-800 border border-slate-700 flex items-center justify-center">
+                    <Icon className="w-4 h-4 text-blue-400" />
+                  </div>
+                  <span className="text-sm">{text}</span>
+                </div>
+              ))}
             </div>
-
-            <div className="space-y-6">
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                  <Phone className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold">Phone</h4>
-                  <p className="text-blue-100">+1-800-CIRRARIQ</p>
-                </div>
-              </div>
-
-              <div className="flex items-center space-x-4">
-                <div className="w-12 h-12 bg-white/20 rounded-full flex items-center justify-center">
-                  <Clock className="w-6 h-6 text-white" />
-                </div>
-                <div>
-                  <h4 className="text-white font-semibold">Schedule a Meeting</h4>
-                  <p className="text-blue-100">Online Consultation</p>
-                </div>
-              </div>
+            <div className="mt-8">
+              <CalendlyButton text="Schedule a Free Consultation" variant="primary" size="lg" className="bg-blue-600 hover:bg-blue-500 text-white font-semibold px-6 py-3 rounded-lg" />
             </div>
-
           </motion.div>
-
+          <motion.div initial={{ opacity: 0, x: 20 }} whileInView={{ opacity: 1, x: 0 }} transition={{ duration: 0.6, delay: 0.15 }} viewport={{ once: true }}
+            className="card-dark p-8 space-y-5"
+          >
+            {['Your name', 'Email address', 'Company / Organization'].map((ph) => (
+              <div key={ph}>
+                <input type="text" placeholder={ph} className="w-full bg-slate-800/60 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 text-sm placeholder:text-slate-600 focus:outline-none focus:border-blue-500 transition-colors" />
+              </div>
+            ))}
+            <textarea placeholder="Tell us about your asset and project goals..." rows={4} className="w-full bg-slate-800/60 border border-slate-700 rounded-lg px-4 py-3 text-slate-300 text-sm placeholder:text-slate-600 focus:outline-none focus:border-blue-500 transition-colors resize-none" />
+            <button className="w-full bg-blue-600 hover:bg-blue-500 text-white font-semibold py-3 rounded-lg transition-colors text-sm">Send Message</button>
+          </motion.div>
         </div>
       </div>
     </section>

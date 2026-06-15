@@ -314,7 +314,7 @@ const advantages = [
 
 export default function MultiSignaturePage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -369,13 +369,13 @@ export default function MultiSignaturePage() {
               {/* Main Content */}
               <div className="lg:col-span-2">
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is Multi-Signature?</h2>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <h2 className="text-3xl font-bold text-white mb-6">What Is Multi-Signature?</h2>
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     Multi-Signature (Multisig) is an advanced security system on the blockchain that requires multiple signatures 
                     to approve and execute transactions. Unlike regular wallets controlled by a single private key, 
                     multi-signature wallets require approval from multiple parties.
                   </p>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     This system is especially important for RWA projects that deal with valuable assets. 
                     Multi-Signature protects assets against hacks, theft, and unauthorized access, and enables 
                     distributed control.
@@ -384,7 +384,7 @@ export default function MultiSignaturePage() {
 
                 {/* Features */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Key Features</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Key Features</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {features.map((feature, index) => (
                       <div key={index} className="flex items-start space-x-4 ">
@@ -392,8 +392,8 @@ export default function MultiSignaturePage() {
                           <feature.icon className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
-                          <p className="text-gray-600">{feature.description}</p>
+                          <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                          <p className="text-slate-400">{feature.description}</p>
                         </div>
                       </div>
                     ))}
@@ -402,19 +402,19 @@ export default function MultiSignaturePage() {
 
                 {/* Multisig Types */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Types Multi-Signature</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Types Multi-Signature</h2>
                   <div className="space-y-6">
                     {multisigTypes.map((type, index) => (
-                      <div key={index} className="border border-gray-200 rounded-xl p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-3">{type.name}</h3>
-                        <p className="text-gray-600 mb-4">{type.description}</p>
+                      <div key={index} className="border border-slate-800 rounded-xl p-6">
+                        <h3 className="text-xl font-bold text-white mb-3">{type.name}</h3>
+                        <p className="text-slate-400 mb-4">{type.description}</p>
                         <div className="mb-4">
                           <h4 className="font-semibold text-gray-800 mb-2">Features:</h4>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                             {type.features.map((feature, featureIndex) => (
                               <div key={featureIndex} className="flex items-center space-x-2 ">
                                 <CheckCircle className="w-4 h-4 text-red-500" />
-                                <span className="text-sm text-gray-600">{feature}</span>
+                                <span className="text-sm text-slate-400">{feature}</span>
                               </div>
                             ))}
                           </div>
@@ -431,7 +431,7 @@ export default function MultiSignaturePage() {
 
                 {/* Code Example */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Example Implementation</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Example Implementation</h2>
                   <div className="bg-gray-900 rounded-xl p-6 overflow-x-auto">
                     <pre className="text-green-400 text-sm leading-relaxed">
                       <code>{codeExample}</code>
@@ -441,12 +441,12 @@ export default function MultiSignaturePage() {
 
                 {/* Security Features */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Security Capabilities</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Security Capabilities</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {securityFeatures.map((feature, index) => (
                       <div key={index} className="flex items-center space-x-3 ">
                         <CheckCircle className="w-5 h-5 text-red-500 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
+                        <span className="text-slate-300">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -454,12 +454,12 @@ export default function MultiSignaturePage() {
 
                 {/* Advantages */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Benefits of Multi-Signature</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Benefits of Multi-Signature</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {advantages.map((advantage, index) => (
                       <div key={index} className="flex items-center space-x-3 ">
                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700">{advantage}</span>
+                        <span className="text-slate-300">{advantage}</span>
                       </div>
                     ))}
                   </div>
@@ -469,51 +469,51 @@ export default function MultiSignaturePage() {
               {/* Sidebar */}
               <div className="lg:col-span-1">
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">General Info</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">General Info</h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Type:</span>
+                      <span className="text-slate-400">Type:</span>
                       <span className="font-semibold text-red-600">Security</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Signatures:</span>
+                      <span className="text-slate-400">Signatures:</span>
                       <span className="font-semibold text-red-600">Multiple</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Control:</span>
+                      <span className="text-slate-400">Control:</span>
                       <span className="font-semibold text-red-600">distributed</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Security:</span>
+                      <span className="text-slate-400">Security:</span>
                       <span className="font-semibold text-red-600">Very High</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Key Benefits</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Key Benefits</h3>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-red-500" />
-                      <span className="text-sm text-gray-600">High Security</span>
+                      <span className="text-sm text-slate-400">High Security</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-red-500" />
-                      <span className="text-sm text-gray-600">Distributed control</span>
+                      <span className="text-sm text-slate-400">Distributed control</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-red-500" />
-                      <span className="text-sm text-gray-600">Resistant to Hack</span>
+                      <span className="text-sm text-slate-400">Resistant to Hack</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-red-500" />
-                      <span className="text-sm text-gray-600">Full Transparency</span>
+                      <span className="text-sm text-slate-400">Full Transparency</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Useful Resources</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Useful Resources</h3>
                   <div className="space-y-3">
                     <a href="https://gnosis-safe.io/" target="_blank" rel="noopener noreferrer" className="flex items-center text-red-600 hover:text-red-800 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
@@ -535,7 +535,7 @@ export default function MultiSignaturePage() {
                   <p className="text-red-100 mb-4">
                     Our expert team is ready to implement multi-signature wallets for RWA projects
                   </p>
-                  <Link href="/contact" className="inline-flex items-center bg-white text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  <Link href="/contact" className="inline-flex items-center bg-[#0e1420] text-red-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                     Contact Us
                     <ArrowRight className="w-4 h-4 mr-2" />
                   </Link>

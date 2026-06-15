@@ -217,7 +217,7 @@ const technicalSpecs = [
 
 export default function IPFSPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -272,13 +272,13 @@ export default function IPFSPage() {
               {/* Main Content */}
               <div className="lg:col-span-2">
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is IPFS?</h2>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <h2 className="text-3xl font-bold text-white mb-6">What Is IPFS?</h2>
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     IPFS (InterPlanetary File System) is a peer-to-peer protocol and network for storing and 
                     sharing data in a distributed file system. Unlike HTTP which uses location-based 
                     addressing, IPFS uses content-based addressing.
                   </p>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     This system is very useful for RWA projects as it enables secure and permanent storage of 
                     documents, certificates, and metadata related to real assets. IPFS guarantees 
                     that data is always accessible and censorship resistant.
@@ -287,7 +287,7 @@ export default function IPFSPage() {
 
                 {/* Features */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Key Features</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Key Features</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {features.map((feature, index) => (
                       <div key={index} className="flex items-start space-x-4 ">
@@ -295,8 +295,8 @@ export default function IPFSPage() {
                           <feature.icon className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
-                          <p className="text-gray-600">{feature.description}</p>
+                          <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                          <p className="text-slate-400">{feature.description}</p>
                         </div>
                       </div>
                     ))}
@@ -305,17 +305,17 @@ export default function IPFSPage() {
 
                 {/* Use Cases */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Use Cases in RWA</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Use Cases in RWA</h2>
                   <div className="space-y-6">
                     {useCases.map((useCase, index) => (
-                      <div key={index} className="border border-gray-200 rounded-xl p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-3">{useCase.name}</h3>
-                        <p className="text-gray-600 mb-4">{useCase.description}</p>
+                      <div key={index} className="border border-slate-800 rounded-xl p-6">
+                        <h3 className="text-xl font-bold text-white mb-3">{useCase.name}</h3>
+                        <p className="text-slate-400 mb-4">{useCase.description}</p>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                           {useCase.features.map((feature, featureIndex) => (
                             <div key={featureIndex} className="flex items-center space-x-2 ">
                               <CheckCircle className="w-4 h-4 text-indigo-500" />
-                              <span className="text-sm text-gray-600">{feature}</span>
+                              <span className="text-sm text-slate-400">{feature}</span>
                             </div>
                           ))}
                         </div>
@@ -326,12 +326,12 @@ export default function IPFSPage() {
 
                 {/* Technical Specifications */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Technical Specifications</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Technical Specifications</h2>
                   <div className="space-y-6">
                     {technicalSpecs.map((spec, index) => (
-                      <div key={index} className="border border-gray-200 rounded-xl p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-2">{spec.name}</h3>
-                        <p className="text-gray-600 mb-2">{spec.description}</p>
+                      <div key={index} className="border border-slate-800 rounded-xl p-6">
+                        <h3 className="text-xl font-bold text-white mb-2">{spec.name}</h3>
+                        <p className="text-slate-400 mb-2">{spec.description}</p>
                         <div className="bg-indigo-50 rounded-lg p-3">
                           <p className="text-sm text-indigo-800">
                             <strong>Advantage:</strong> {spec.benefit}
@@ -344,7 +344,7 @@ export default function IPFSPage() {
 
                 {/* Code Example */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Example Implementation</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Example Implementation</h2>
                   <div className="bg-gray-900 rounded-xl p-6 overflow-x-auto">
                     <pre className="text-green-400 text-sm leading-relaxed">
                       <code>{codeExample}</code>
@@ -354,12 +354,12 @@ export default function IPFSPage() {
 
                 {/* Advantages */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Benefits of IPFS</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Benefits of IPFS</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {advantages.map((advantage, index) => (
                       <div key={index} className="flex items-center space-x-3 ">
                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700">{advantage}</span>
+                        <span className="text-slate-300">{advantage}</span>
                       </div>
                     ))}
                   </div>
@@ -369,65 +369,65 @@ export default function IPFSPage() {
               {/* Sidebar */}
               <div className="lg:col-span-1">
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">General Info</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">General Info</h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Type:</span>
-                      <span className="font-semibold text-indigo-600">File System</span>
+                      <span className="text-slate-400">Type:</span>
+                      <span className="font-semibold text-indigo-400">File System</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Architecture:</span>
-                      <span className="font-semibold text-indigo-600">P2P</span>
+                      <span className="text-slate-400">Architecture:</span>
+                      <span className="font-semibold text-indigo-400">P2P</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Addressing:</span>
-                      <span className="font-semibold text-indigo-600">Content-based</span>
+                      <span className="text-slate-400">Addressing:</span>
+                      <span className="font-semibold text-indigo-400">Content-based</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Status:</span>
-                      <span className="font-semibold text-indigo-600">Active</span>
+                      <span className="text-slate-400">Status:</span>
+                      <span className="font-semibold text-indigo-400">Active</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Key Benefits</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Key Benefits</h3>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-indigo-500" />
-                      <span className="text-sm text-gray-600">Decentralized</span>
+                      <span className="text-sm text-slate-400">Decentralized</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-indigo-500" />
-                      <span className="text-sm text-gray-600">Resistant to Censorship</span>
+                      <span className="text-sm text-slate-400">Resistant to Censorship</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-indigo-500" />
-                      <span className="text-sm text-gray-600">Low cost</span>
+                      <span className="text-sm text-slate-400">Low cost</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-indigo-500" />
-                      <span className="text-sm text-gray-600">Permanent access</span>
+                      <span className="text-sm text-slate-400">Permanent access</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Useful Resources</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Useful Resources</h3>
                   <div className="space-y-3">
-                    <a href="https://ipfs.io/" target="_blank" rel="noopener noreferrer" className="flex items-center text-indigo-600 hover:text-indigo-800 transition-colors">
+                    <a href="https://ipfs.io/" target="_blank" rel="noopener noreferrer" className="flex items-center text-indigo-400 hover:text-indigo-800 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       IPFS Official
                     </a>
-                    <a href="https://docs.ipfs.io/" target="_blank" rel="noopener noreferrer" className="flex items-center text-indigo-600 hover:text-indigo-800 transition-colors">
+                    <a href="https://docs.ipfs.io/" target="_blank" rel="noopener noreferrer" className="flex items-center text-indigo-400 hover:text-indigo-800 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       IPFS Documentation
                     </a>
-                    <a href="https://github.com/ipfs/js-ipfs" target="_blank" rel="noopener noreferrer" className="flex items-center text-indigo-600 hover:text-indigo-800 transition-colors">
+                    <a href="https://github.com/ipfs/js-ipfs" target="_blank" rel="noopener noreferrer" className="flex items-center text-indigo-400 hover:text-indigo-800 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       IPFS JavaScript
                     </a>
-                    <a href="https://infura.io/product/ipfs" target="_blank" rel="noopener noreferrer" className="flex items-center text-indigo-600 hover:text-indigo-800 transition-colors">
+                    <a href="https://infura.io/product/ipfs" target="_blank" rel="noopener noreferrer" className="flex items-center text-indigo-400 hover:text-indigo-800 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Infura IPFS
                     </a>
@@ -439,7 +439,7 @@ export default function IPFSPage() {
                   <p className="text-indigo-100 mb-4">
                     Our expert team is ready to implement IPFS for RWA projects
                   </p>
-                  <Link href="/contact" className="inline-flex items-center bg-white text-indigo-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  <Link href="/contact" className="inline-flex items-center bg-[#0e1420] text-indigo-400 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                     Contact Us
                     <ArrowRight className="w-4 h-4 mr-2" />
                   </Link>

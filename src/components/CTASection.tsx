@@ -1,94 +1,38 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import Link from 'next/link'
-import { Phone, Clock } from 'lucide-react'
+import { CalendarDays } from 'lucide-react'
 import CalendlyButton from './CalendlyButton'
 
 export default function CTASection() {
   return (
-    <section className="py-20 bg-gradient-to-r from-cyan-400 to-blue-600">
-      <div className="container mx-auto px-4">
+    <section className="py-16 border-t border-slate-800" style={{ background: '#0e1420' }}>
+      <div className="container mx-auto px-6">
         <motion.div
-          initial={{ opacity: 0, y: 30 }}
+          initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.6 }}
           viewport={{ once: true }}
-          className="text-center"
+          className="rounded-2xl p-10 border border-blue-900/40 flex flex-col lg:flex-row items-center justify-between gap-8"
+          style={{ background: 'linear-gradient(135deg, #0f1d35 0%, #0e1420 100%)' }}
         >
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-6">
-            Ready to Tokenize Your Assets?
-          </h2>
-          <p className="text-xl text-cyan-100 mb-8 max-w-3xl mx-auto">
-            With our consultation, find the right tokenization solution for your assets.
-          </p>
-          
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <CalendlyButton 
-              text="Get Free Consultation" 
-              variant="secondary" 
-              size="lg" 
-              className="bg-white text-blue-600 hover:bg-gray-100"
+          <div className="flex items-center gap-5">
+            <div className="w-14 h-14 rounded-2xl bg-blue-600/20 border border-blue-600/30 flex items-center justify-center flex-shrink-0">
+              <CalendarDays className="w-6 h-6 text-blue-400" />
+            </div>
+            <div>
+              <h2 className="text-2xl font-bold text-white mb-1">Ready to Bring Real Assets On-Chain?</h2>
+              <p className="text-slate-400 text-sm">Launch tokenized investment products with secure, compliant, and scalable infrastructure.</p>
+            </div>
+          </div>
+          <div className="flex-shrink-0">
+            <CalendlyButton
+              text="Schedule Consultation"
+              variant="primary"
+              size="lg"
+              className="bg-white hover:bg-slate-100 text-slate-900 font-bold px-7 py-3 rounded-xl inline-flex items-center gap-2 transition-all"
             />
-            <Link 
-              href="/portfolio"
-              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
-            >
-              View Portfolio
-            </Link>
           </div>
-
-          {/* Contact Methods */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-2xl mx-auto">
-            <motion.a
-              href="tel:+18003000000"
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              viewport={{ once: true }}
-              className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 text-white hover:bg-white/30 transition-all duration-300 group"
-            >
-              <Phone className="w-8 h-8 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="font-semibold mb-2">Phone</h3>
-              <p className="text-sm text-cyan-100">+1-800-CIRRARIQ</p>
-            </motion.a>
-
-            <motion.div
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              viewport={{ once: true }}
-              className="bg-white/20 backdrop-blur-sm rounded-2xl p-6 text-white hover:bg-white/30 transition-all duration-300 group"
-            >
-              <Clock className="w-8 h-8 mx-auto mb-4 group-hover:scale-110 transition-transform" />
-              <h3 className="font-semibold mb-2">Schedule a Meeting</h3>
-              <p className="text-sm text-cyan-100 mb-4">Online Consultation</p>
-              <CalendlyButton 
-                text="Book a Time" 
-                variant="secondary" 
-                size="sm" 
-                className="w-full"
-              />
-            </motion.div>
-          </div>
-
-          {/* Trust Indicators */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.5 }}
-            viewport={{ once: true }}
-            className="mt-12 text-center"
-          >
-            <div className="text-cyan-100 text-sm mb-4">
-              Over 47 assets successfully tokenized
-            </div>
-            <div className="flex justify-center items-center space-x-8 text-cyan-200 text-sm">
-              <span>✓ High Security</span>
-              <span>✓ Fast Execution</span>
-              <span>✓ 24/7 Support</span>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>

@@ -165,7 +165,7 @@ const advantages = [
 
 export default function ERC3643Page() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -220,13 +220,13 @@ export default function ERC3643Page() {
               {/* Main Content */}
               <div className="lg:col-span-2">
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is ERC-3643?</h2>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <h2 className="text-3xl font-bold text-white mb-6">What Is ERC-3643?</h2>
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     ERC-3643 is an advanced standard for creating digital securities (Security Tokens) on the Ethereum network. 
                     This standard is specially designed for compliance with financial laws and securities regulations, and includes 
                     advanced identity verification, transfer control, and license management capabilities.
                   </p>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     Unlike ERC-20 which is designed for general tokens, ERC-3643 is designed for regulated security tokens 
                     that require accurate control and management. This standard enables the creation of 
                     shares, debentures, and other financial instruments in full compliance with laws.
@@ -235,7 +235,7 @@ export default function ERC3643Page() {
 
                 {/* Features */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Key Features</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Key Features</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {features.map((feature, index) => (
                       <div key={index} className="flex items-start space-x-4 ">
@@ -243,8 +243,8 @@ export default function ERC3643Page() {
                           <feature.icon className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
-                          <p className="text-gray-600">{feature.description}</p>
+                          <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                          <p className="text-slate-400">{feature.description}</p>
                         </div>
                       </div>
                     ))}
@@ -253,12 +253,12 @@ export default function ERC3643Page() {
 
                 {/* Compliance Features */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Regulatory Compliance Capabilities</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Regulatory Compliance Capabilities</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {complianceFeatures.map((feature, index) => (
                       <div key={index} className="flex items-center space-x-3 ">
                         <CheckCircle className="w-5 h-5 text-purple-500 flex-shrink-0" />
-                        <span className="text-gray-700">{feature}</span>
+                        <span className="text-slate-300">{feature}</span>
                       </div>
                     ))}
                   </div>
@@ -266,17 +266,17 @@ export default function ERC3643Page() {
 
                 {/* Token Types */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Supported Token Types</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Supported Token Types</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {tokenTypes.map((type, index) => (
-                      <div key={index} className="border border-gray-200 rounded-xl p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-3">{type.name}</h3>
-                        <p className="text-gray-600 mb-4">{type.description}</p>
+                      <div key={index} className="border border-slate-800 rounded-xl p-6">
+                        <h3 className="text-xl font-bold text-white mb-3">{type.name}</h3>
+                        <p className="text-slate-400 mb-4">{type.description}</p>
                         <div className="space-y-2">
                           {type.features.map((feature, featureIndex) => (
                             <div key={featureIndex} className="flex items-center space-x-2 ">
                               <CheckCircle className="w-4 h-4 text-purple-500" />
-                              <span className="text-sm text-gray-600">{feature}</span>
+                              <span className="text-sm text-slate-400">{feature}</span>
                             </div>
                           ))}
                         </div>
@@ -287,7 +287,7 @@ export default function ERC3643Page() {
 
                 {/* Code Example */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Example Implementation</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Example Implementation</h2>
                   <div className="bg-gray-900 rounded-xl p-6 overflow-x-auto">
                     <pre className="text-green-400 text-sm leading-relaxed">
                       <code>{codeExample}</code>
@@ -297,12 +297,12 @@ export default function ERC3643Page() {
 
                 {/* Advantages */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Benefits of ERC-3643</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Benefits of ERC-3643</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {advantages.map((advantage, index) => (
                       <div key={index} className="flex items-center space-x-3 ">
                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700">{advantage}</span>
+                        <span className="text-slate-300">{advantage}</span>
                       </div>
                     ))}
                   </div>
@@ -312,61 +312,61 @@ export default function ERC3643Page() {
               {/* Sidebar */}
               <div className="lg:col-span-1">
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">General Info</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">General Info</h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Type:</span>
-                      <span className="font-semibold text-purple-600">Securities Standard</span>
+                      <span className="text-slate-400">Type:</span>
+                      <span className="font-semibold text-purple-400">Securities Standard</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Regulatory:</span>
-                      <span className="font-semibold text-purple-600">Compliance Complete</span>
+                      <span className="text-slate-400">Regulatory:</span>
+                      <span className="font-semibold text-purple-400">Compliance Complete</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">KYC/AML:</span>
-                      <span className="font-semibold text-purple-600">Built-in</span>
+                      <span className="text-slate-400">KYC/AML:</span>
+                      <span className="font-semibold text-purple-400">Built-in</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Status:</span>
-                      <span className="font-semibold text-purple-600">Active</span>
+                      <span className="text-slate-400">Status:</span>
+                      <span className="font-semibold text-purple-400">Active</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Key Benefits</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Key Benefits</h3>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-purple-500" />
-                      <span className="text-sm text-gray-600">Compliance Regulatory</span>
+                      <span className="text-sm text-slate-400">Compliance Regulatory</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-purple-500" />
-                      <span className="text-sm text-gray-600">High Security</span>
+                      <span className="text-sm text-slate-400">High Security</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-purple-500" />
-                      <span className="text-sm text-gray-600">Complete control</span>
+                      <span className="text-sm text-slate-400">Complete control</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-purple-500" />
-                      <span className="text-sm text-gray-600">Transparency</span>
+                      <span className="text-sm text-slate-400">Transparency</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Useful Resources</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Useful Resources</h3>
                   <div className="space-y-3">
-                    <a href="https://eips.ethereum.org/EIPS/eip-3643" target="_blank" rel="noopener noreferrer" className="flex items-center text-purple-600 hover:text-purple-800 transition-colors">
+                    <a href="https://eips.ethereum.org/EIPS/eip-3643" target="_blank" rel="noopener noreferrer" className="flex items-center text-purple-400 hover:text-purple-800 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       EIP-3643 Specification
                     </a>
-                    <a href="https://tokeny.com/" target="_blank" rel="noopener noreferrer" className="flex items-center text-purple-600 hover:text-purple-800 transition-colors">
+                    <a href="https://tokeny.com/" target="_blank" rel="noopener noreferrer" className="flex items-center text-purple-400 hover:text-purple-800 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Tokeny Solutions
                     </a>
-                    <a href="https://docs.tokeny.com/" target="_blank" rel="noopener noreferrer" className="flex items-center text-purple-600 hover:text-purple-800 transition-colors">
+                    <a href="https://docs.tokeny.com/" target="_blank" rel="noopener noreferrer" className="flex items-center text-purple-400 hover:text-purple-800 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Tokeny Documentation
                     </a>
@@ -378,7 +378,7 @@ export default function ERC3643Page() {
                   <p className="text-purple-100 mb-4">
                     Our expert team is ready to develop digital securities using ERC-3643
                   </p>
-                  <Link href="/contact" className="inline-flex items-center bg-white text-purple-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  <Link href="/contact" className="inline-flex items-center bg-[#0e1420] text-purple-400 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                     Contact Us
                     <ArrowRight className="w-4 h-4 mr-2" />
                   </Link>

@@ -77,19 +77,19 @@ const processSteps = [
 
 export default function ServicesPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero */}
-      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
+      <section className="bg-gradient-to-r [#080c14] py-20">
         <div className="container mx-auto px-4 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Real-World Asset Tokenization Services</h1>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
             6 specialized services for tokenizing all types of real-world assets with the highest quality and security.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
+            <Link href="/contact" className="bg-white text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
               Free Consultation
             </Link>
-            <Link href="/portfolio" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+            <Link href="/portfolio" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-400 transition-all duration-300">
               View Portfolio
             </Link>
           </div>
@@ -97,11 +97,11 @@ export default function ServicesPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0e1420]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Stats & Performance</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Our achievements in real-world asset tokenization.</p>
+            <h2 className="text-4xl font-bold text-white mb-6">Stats & Performance</h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">Our achievements in real-world asset tokenization.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {stats.map((stat, i) => (
@@ -109,8 +109,8 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl mx-auto mb-4 flex items-center justify-center">
                   <stat.icon className="w-8 h-8 text-white" />
                 </div>
-                <div className="text-4xl font-bold text-gray-900 mb-2">{stat.number}</div>
-                <div className="text-gray-600">{stat.label}</div>
+                <div className="text-4xl font-bold text-white mb-2">{stat.number}</div>
+                <div className="text-slate-400">{stat.label}</div>
               </div>
             ))}
           </div>
@@ -118,11 +118,11 @@ export default function ServicesPage() {
       </section>
 
       {/* Services Grid */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#0a0f1a]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Services</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Specialized real-world asset tokenization services.</p>
+            <h2 className="text-4xl font-bold text-white mb-6">Our Services</h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">Specialized real-world asset tokenization services.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, i) => (
@@ -130,27 +130,27 @@ export default function ServicesPage() {
                 <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.color} flex items-center justify-center mb-6`}>
                   <service.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-2xl font-bold text-gray-900 mb-4">{service.title}</h3>
-                <p className="text-gray-600 mb-6 leading-relaxed">{service.description}</p>
+                <h3 className="text-2xl font-bold text-white mb-4">{service.title}</h3>
+                <p className="text-slate-400 mb-6 leading-relaxed">{service.description}</p>
                 <div className="space-y-2 mb-6">
                   {service.features.map((f, fi) => (
-                    <div key={fi} className="flex items-center text-sm text-gray-600">
+                    <div key={fi} className="flex items-center text-sm text-slate-400">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />{f}
                     </div>
                   ))}
                 </div>
-                <div className="grid grid-cols-3 gap-4 mb-6 p-4 bg-gray-50 rounded-lg">
+                <div className="grid grid-cols-3 gap-4 mb-6 p-4 bg-[#0a0f1a] rounded-lg">
                   <div className="text-center">
-                    <div className="text-lg font-bold text-blue-600">{service.stats.value}</div>
-                    <div className="text-xs text-gray-500">Value</div>
+                    <div className="text-lg font-bold text-blue-400">{service.stats.value}</div>
+                    <div className="text-xs text-slate-500">Value</div>
                   </div>
                   <div className="text-center">
                     <div className="text-lg font-bold text-green-600">{service.stats.assets}</div>
-                    <div className="text-xs text-gray-500">Assets</div>
+                    <div className="text-xs text-slate-500">Assets</div>
                   </div>
                   <div className="text-center">
-                    <div className="text-lg font-bold text-purple-600">{service.stats.return}</div>
-                    <div className="text-xs text-gray-500">Return</div>
+                    <div className="text-lg font-bold text-purple-400">{service.stats.return}</div>
+                    <div className="text-xs text-slate-500">Return</div>
                   </div>
                 </div>
                 <Link href={service.href} className="inline-flex items-center w-full justify-center bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-all duration-300">
@@ -164,11 +164,11 @@ export default function ServicesPage() {
       </section>
 
       {/* Process */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0e1420]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Tokenization Process</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Steps to convert real-world assets into digital tokens.</p>
+            <h2 className="text-4xl font-bold text-white mb-6">Tokenization Process</h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">Steps to convert real-world assets into digital tokens.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {processSteps.map((step, i) => (
@@ -176,8 +176,8 @@ export default function ServicesPage() {
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   {step.step}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-gray-600 text-sm">{step.description}</p>
+                <h3 className="text-lg font-semibold text-white mb-2">{step.title}</h3>
+                <p className="text-slate-400 text-sm">{step.description}</p>
               </div>
             ))}
           </div>
@@ -192,10 +192,10 @@ export default function ServicesPage() {
             With our free consultation, find the best tokenization solution for your assets.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
+            <Link href="/contact" className="bg-white text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
               Free Consultation
             </Link>
-            <Link href="/portfolio" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+            <Link href="/portfolio" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-400 transition-all duration-300">
               View Portfolio
             </Link>
           </div>

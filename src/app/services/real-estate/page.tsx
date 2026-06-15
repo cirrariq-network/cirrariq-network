@@ -77,9 +77,9 @@ const process = [
 
 export default function RealEstatePage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
+      <section className="bg-gradient-to-r [#080c14] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
@@ -97,7 +97,7 @@ export default function RealEstatePage() {
               </Link>
               <Link 
                 href="/portfolio"
-                className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-gray-900 transition-all duration-300"
+                className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-white transition-all duration-300"
               >
                 View Portfolio
               </Link>
@@ -110,10 +110,10 @@ export default function RealEstatePage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl font-bold text-white mb-6">
               Key Features
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Advanced Capabilities for Real Estate Tokenization
             </p>
           </div>
@@ -125,17 +125,17 @@ export default function RealEstatePage() {
                   <feature.icon className="w-8 h-8 text-white" />
                 </div>
                 
-                <h3 className="text-xl font-bold text-gray-900 mb-4">
+                <h3 className="text-xl font-bold text-white mb-4">
                   {feature.title}
                 </h3>
                 
-                <p className="text-gray-600 mb-4 leading-relaxed">
+                <p className="text-slate-400 mb-4 leading-relaxed">
                   {feature.description}
                 </p>
 
                 <div className="space-y-2">
                   {feature.details.map((detail, detailIndex) => (
-                    <div key={detailIndex} className="flex items-center text-sm text-gray-600">
+                    <div key={detailIndex} className="flex items-center text-sm text-slate-400">
                       <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />
                       {detail}
                     </div>
@@ -148,13 +148,13 @@ export default function RealEstatePage() {
       </section>
 
       {/* Process Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0e1420]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">
+            <h2 className="text-4xl font-bold text-white mb-6">
               Real Estate Tokenization Process
             </h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               Steps to Convert Real Estate into Digital Tokens
             </p>
           </div>
@@ -165,10 +165,10 @@ export default function RealEstatePage() {
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 text-white rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">
                   {step.step}
                 </div>
-                <h3 className="text-lg font-semibold text-gray-900 mb-2">
+                <h3 className="text-lg font-semibold text-white mb-2">
                   {step.title}
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-slate-400 text-sm">
                   {step.description}
                 </p>
               </div>
@@ -178,40 +178,40 @@ export default function RealEstatePage() {
       </section>
 
       {/* Benefits Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#0a0f1a]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl font-bold text-white mb-6">
                 Why Tokenize Real Estate?
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start">
                   <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">High Liquidity</h3>
-                    <p className="text-gray-600">Converting illiquid assets into tradeable assets.</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">High Liquidity</h3>
+                    <p className="text-slate-400">Converting illiquid assets into tradeable assets.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Fractional Ownership</h3>
-                    <p className="text-gray-600">Enabling investment in high-value real estate.</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">Fractional Ownership</h3>
+                    <p className="text-slate-400">Enabling investment in high-value real estate.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Full Transparency</h3>
-                    <p className="text-gray-600">All transactions are recorded on the blockchain.</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">Full Transparency</h3>
+                    <p className="text-slate-400">All transactions are recorded on the blockchain.</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <CheckCircle className="w-6 h-6 text-green-500 mr-3 mt-1 flex-shrink-0" />
                   <div>
-                    <h3 className="text-lg font-semibold text-gray-900 mb-2">Global Access</h3>
-                    <p className="text-gray-600">Investors from around the world.</p>
+                    <h3 className="text-lg font-semibold text-white mb-2">Global Access</h3>
+                    <p className="text-slate-400">Investors from around the world.</p>
                   </div>
                 </div>
               </div>
@@ -253,13 +253,13 @@ export default function RealEstatePage() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link 
               href="/contact"
-              className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300"
+              className="bg-white text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300"
             >
               Free Consultation
             </Link>
             <Link 
               href="/portfolio"
-              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
+              className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-400 transition-all duration-300"
             >
               View Portfolio
             </Link>

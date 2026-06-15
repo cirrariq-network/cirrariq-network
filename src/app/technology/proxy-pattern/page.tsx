@@ -172,7 +172,7 @@ const advantages = [
 
 export default function ProxyPatternPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -227,13 +227,13 @@ export default function ProxyPatternPage() {
               {/* Main Content */}
               <div className="lg:col-span-2">
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is the Proxy Pattern?</h2>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <h2 className="text-3xl font-bold text-white mb-6">What Is the Proxy Pattern?</h2>
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     The Proxy Pattern is an advanced design pattern in smart contracts that enables upgrading contract logic 
                     without changing its address. This pattern consists of two main parts: the Proxy Contract, 
                     which has a fixed address, and the Implementation Contract, which contains the contract logic.
                   </p>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     This pattern is especially useful for RWA projects that require continuous updates and improvements. 
                     With the Proxy Pattern, you can fix bugs, add new features, 
                     and apply security optimizations without forcing users to change the contract address.
@@ -242,7 +242,7 @@ export default function ProxyPatternPage() {
 
                 {/* Features */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Key Features</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Key Features</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {features.map((feature, index) => (
                       <div key={index} className="flex items-start space-x-4 ">
@@ -250,8 +250,8 @@ export default function ProxyPatternPage() {
                           <feature.icon className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
-                          <p className="text-gray-600">{feature.description}</p>
+                          <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                          <p className="text-slate-400">{feature.description}</p>
                         </div>
                       </div>
                     ))}
@@ -260,19 +260,19 @@ export default function ProxyPatternPage() {
 
                 {/* Proxy Types */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Types Proxy Pattern</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Types Proxy Pattern</h2>
                   <div className="space-y-6">
                     {proxyTypes.map((type, index) => (
-                      <div key={index} className="border border-gray-200 rounded-xl p-6">
-                        <h3 className="text-xl font-bold text-gray-900 mb-3">{type.name}</h3>
-                        <p className="text-gray-600 mb-4">{type.description}</p>
+                      <div key={index} className="border border-slate-800 rounded-xl p-6">
+                        <h3 className="text-xl font-bold text-white mb-3">{type.name}</h3>
+                        <p className="text-slate-400 mb-4">{type.description}</p>
                         <div className="mb-4">
                           <h4 className="font-semibold text-gray-800 mb-2">Features:</h4>
                           <div className="grid grid-cols-1 md:grid-cols-2 gap-2">
                             {type.features.map((feature, featureIndex) => (
                               <div key={featureIndex} className="flex items-center space-x-2 ">
                                 <CheckCircle className="w-4 h-4 text-orange-500" />
-                                <span className="text-sm text-gray-600">{feature}</span>
+                                <span className="text-sm text-slate-400">{feature}</span>
                               </div>
                             ))}
                           </div>
@@ -289,7 +289,7 @@ export default function ProxyPatternPage() {
 
                 {/* Code Example */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Example Implementation</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Example Implementation</h2>
                   <div className="bg-gray-900 rounded-xl p-6 overflow-x-auto">
                     <pre className="text-green-400 text-sm leading-relaxed">
                       <code>{codeExample}</code>
@@ -299,12 +299,12 @@ export default function ProxyPatternPage() {
 
                 {/* Best Practices */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Best Practices</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Best Practices</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {bestPractices.map((practice, index) => (
                       <div key={index} className="flex items-center space-x-3 ">
                         <CheckCircle className="w-5 h-5 text-orange-500 flex-shrink-0" />
-                        <span className="text-gray-700">{practice}</span>
+                        <span className="text-slate-300">{practice}</span>
                       </div>
                     ))}
                   </div>
@@ -312,12 +312,12 @@ export default function ProxyPatternPage() {
 
                 {/* Advantages */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Benefits of Proxy Pattern</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Benefits of Proxy Pattern</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {advantages.map((advantage, index) => (
                       <div key={index} className="flex items-center space-x-3 ">
                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700">{advantage}</span>
+                        <span className="text-slate-300">{advantage}</span>
                       </div>
                     ))}
                   </div>
@@ -327,51 +327,51 @@ export default function ProxyPatternPage() {
               {/* Sidebar */}
               <div className="lg:col-span-1">
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">General Info</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">General Info</h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Type:</span>
+                      <span className="text-slate-400">Type:</span>
                       <span className="font-semibold text-orange-600">Design pattern</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Capability:</span>
+                      <span className="text-slate-400">Capability:</span>
                       <span className="font-semibold text-orange-600">Upgrade</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Library:</span>
+                      <span className="text-slate-400">Library:</span>
                       <span className="font-semibold text-orange-600">OpenZeppelin</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Complexity:</span>
+                      <span className="text-slate-400">Complexity:</span>
                       <span className="font-semibold text-orange-600">Medium</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Key Benefits</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Key Benefits</h3>
                   <div className="space-y-3">
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-orange-500" />
-                      <span className="text-sm text-gray-600">Zero-downtime upgrade</span>
+                      <span className="text-sm text-slate-400">Zero-downtime upgrade</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-orange-500" />
-                      <span className="text-sm text-gray-600">Preservation Address</span>
+                      <span className="text-sm text-slate-400">Preservation Address</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-orange-500" />
-                      <span className="text-sm text-gray-600">Management Storage</span>
+                      <span className="text-sm text-slate-400">Management Storage</span>
                     </div>
                     <div className="flex items-center space-x-2 ">
                       <CheckCircle className="w-4 h-4 text-orange-500" />
-                      <span className="text-sm text-gray-600">High flexibility</span>
+                      <span className="text-sm text-slate-400">High flexibility</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Useful Resources</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Useful Resources</h3>
                   <div className="space-y-3">
                     <a href="https://docs.openzeppelin.com/contracts/4.x/upgradeable" target="_blank" rel="noopener noreferrer" className="flex items-center text-orange-600 hover:text-orange-800 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
@@ -393,7 +393,7 @@ export default function ProxyPatternPage() {
                   <p className="text-orange-100 mb-4">
                     Our expert team is ready to implement the Proxy Pattern for RWA projects
                   </p>
-                  <Link href="/contact" className="inline-flex items-center bg-white text-orange-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  <Link href="/contact" className="inline-flex items-center bg-[#0e1420] text-orange-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                     Contact Us
                     <ArrowRight className="w-4 h-4 mr-2" />
                   </Link>

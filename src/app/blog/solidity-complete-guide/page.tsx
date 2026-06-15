@@ -73,7 +73,7 @@ export default function SolidityGuidePage() {
               </p>
 
               <h3 className="text-2xl font-bold text-white mb-4">Data Types</h3>
-              <div className="bg-gray-800/50 rounded-lg p-6 mb-6">
+              <div className="bg-slate-800/40 rounded-lg p-6 mb-6">
                 <pre className="text-green-400 text-sm overflow-x-auto">
 {`// Main Data Types
 uint256 public totalSupply;
@@ -92,7 +92,7 @@ mapping(address => uint256) public balances;`}
  In Solidity, functions play an important role in defining contract behavior. Modifiers are also used to apply special conditions to functions..
               </p>
 
-              <div className="bg-gray-800/50 rounded-lg p-6 mb-6">
+              <div className="bg-slate-800/40 rounded-lg p-6 mb-6">
                 <pre className="text-green-400 text-sm overflow-x-auto">
 {`contract RWAToken {
     address public owner;

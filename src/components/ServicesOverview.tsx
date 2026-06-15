@@ -1,127 +1,73 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Building2, Gem, Wheat, Car, FileText, Wallet, ArrowRight } from 'lucide-react'
-import Link from 'next/link'
+import { Database, Users, Code, BarChart2, Shield, Layers } from 'lucide-react'
 
 const services = [
   {
-    id: 'real-estate',
-    title: 'Real Estate Tokenization',
-    description: 'Convert residential, commercial buildings and construction projects into tradeable tokens.',
-    icon: Building2,
-    color: 'from-blue-500 to-cyan-500',
-    href: '/services/real-estate'
+    icon: Database,
+    title: 'Asset Tokenization',
+    desc: 'Convert real-world assets into compliant digital securities effortlessly.',
+    color: '#3b82f6',
   },
   {
-    id: 'mining-metals',
-    title: 'Mining & Metals Tokenization',
-    description: 'Gold, silver, copper, iron, precious stones and various mining assets.',
-    icon: Gem,
-    color: 'from-cyan-400 to-blue-500',
-    href: '/services/mining-metals'
+    icon: Users,
+    title: 'Investor Management',
+    desc: 'Streamline onboarding, KYC, accreditation, and investor communications.',
+    color: '#22d3ee',
   },
   {
-    id: 'agriculture',
-    title: 'Agricultural Products Tokenization',
-    description: 'Saffron, pistachio, rice, livestock and other agricultural and farming products.',
-    icon: Wheat,
-    color: 'from-green-500 to-emerald-500',
-    href: '/services/agriculture'
+    icon: Code,
+    title: 'Smart Contract Framework',
+    desc: 'Secure issuance, transfers, distributions, and governance via audited smart contracts.',
+    color: '#6366f1',
   },
   {
-    id: 'vehicles',
-    title: 'Vehicles & Machinery Tokenization',
-    description: 'Luxury cars, heavy machinery and industrial equipment.',
-    icon: Car,
-    color: 'from-purple-500 to-pink-500',
-    href: '/services/vehicles'
+    icon: BarChart2,
+    title: 'Marketplace Enablement',
+    desc: 'Enable secondary trading and liquidity with robust marketplace infrastructure.',
+    color: '#8b5cf6',
   },
   {
-    id: 'digital-sukuk',
-    title: 'Digital Sukuk & Securities',
-    description: 'Islamic securities, income-generating sukuk, participation bonds and debentures.',
-    icon: FileText,
-    color: 'from-indigo-500 to-blue-500',
-    href: '/services/digital-sukuk'
+    icon: Shield,
+    title: 'Compliance Layer',
+    desc: 'Integrated AML, KYC, and jurisdiction controls to ensure regulatory compliance.',
+    color: '#06b6d4',
   },
   {
-    id: 'rwa-wallet',
-    title: 'Blockchain RWA Wallet',
-    description: 'Dedicated blockchain wallet for storing and managing RWA tokens.',
-    icon: Wallet,
-    color: 'from-indigo-500 to-purple-500',
-    href: '/services/rwa-wallet'
-  }
+    icon: Layers,
+    title: 'Multi-Chain Deployment',
+    desc: 'Deploy across Ethereum, Polygon, Base, Arbitrum and other leading blockchains.',
+    color: '#3b82f6',
+  },
 ]
 
 export default function ServicesOverview() {
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4">
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Our Services
-          </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            We tokenize any type of real asset with international standards and high security.
-          </p>
-        </motion.div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {services.map((service, index) => (
+    <section className="py-24" style={{ background: '#080c14' }}>
+      <div className="container mx-auto px-6">
+        <div className="text-center mb-14">
+          <div className="section-label">Complete RWA Infrastructure</div>
+          <h2 className="text-4xl font-bold text-white">Everything You Need to Tokenize<br />Real-World Assets</h2>
+        </div>
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+          {services.map((s, i) => (
             <motion.div
-              key={service.id}
-              initial={{ opacity: 0, y: 30 }}
+              key={s.title}
+              initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
+              transition={{ duration: 0.5, delay: i * 0.08 }}
               viewport={{ once: true }}
-              className="group"
+              className="card-dark p-6 group hover:border-slate-600 transition-all duration-300 cursor-default"
             >
-              <Link href={service.href}>
-                <div className="bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:-translate-y-2 border border-gray-100 h-full">
-                  <div className={`w-16 h-16 rounded-2xl bg-gradient-to-r ${service.color} flex items-center justify-center mb-6 group-hover:scale-110 transition-transform duration-300`}>
-                    <service.icon className="w-8 h-8 text-white" />
-                  </div>
-                  
-                  <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-blue-600 transition-colors">
-                    {service.title}
-                  </h3>
-                  
-                  <p className="text-gray-600 mb-6 leading-relaxed">
-                    {service.description}
-                  </p>
-                  
-                  <div className="flex items-center text-blue-600 font-semibold group-hover:translate-x-2 transition-transform duration-300">
-                    Learn More
-                    <ArrowRight className="w-4 h-4 ml-2" />
-                  </div>
-                </div>
-              </Link>
+              <div className="w-10 h-10 rounded-lg flex items-center justify-center mb-4" style={{ background: `${s.color}18` }}>
+                <s.icon className="w-5 h-5" style={{ color: s.color }} />
+              </div>
+              <h3 className="text-white font-semibold mb-2">{s.title}</h3>
+              <p className="text-slate-400 text-sm leading-relaxed">{s.desc}</p>
             </motion.div>
           ))}
         </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.4 }}
-          viewport={{ once: true }}
-          className="text-center mt-12"
-        >
-          <Link href="/services">
-            <button className="bg-gradient-to-r from-cyan-400 via-blue-600 to-indigo-600 text-white px-8 py-4 rounded-full text-lg font-semibold hover:from-cyan-500 hover:via-blue-700 hover:to-indigo-700 transition-all duration-300 flex items-center mx-auto group">
-              View All Services
-              <ArrowRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-            </button>
-          </Link>
-        </motion.div>
       </div>
     </section>
   )

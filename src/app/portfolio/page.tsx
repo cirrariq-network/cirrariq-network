@@ -66,9 +66,9 @@ const projects = [
 
 export default function PortfolioPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero */}
-      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
+      <section className="bg-gradient-to-r [#080c14] py-20">
         <div className="container mx-auto px-4 text-center max-w-4xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">Completed Projects</h1>
           <p className="text-xl text-blue-100 mb-8 leading-relaxed">
@@ -96,35 +96,35 @@ export default function PortfolioPage() {
                   </div>
                 </div>
                 <div className="p-8">
-                  <p className="text-gray-600 mb-6 leading-relaxed">{project.description}</p>
+                  <p className="text-slate-400 mb-6 leading-relaxed">{project.description}</p>
                   <div className="grid grid-cols-3 gap-4 mb-6">
                     <div className="text-center">
                       <div className="flex items-center justify-center mb-2">
-                        <Calendar className="w-4 h-4 text-blue-600 mr-1" />
-                        <span className="text-sm text-gray-600">Launch Date</span>
+                        <Calendar className="w-4 h-4 text-blue-400 mr-1" />
+                        <span className="text-sm text-slate-400">Launch Date</span>
                       </div>
-                      <div className="font-semibold text-gray-900">{project.launchDate}</div>
+                      <div className="font-semibold text-white">{project.launchDate}</div>
                     </div>
                     <div className="text-center">
                       <div className="flex items-center justify-center mb-2">
                         <DollarSign className="w-4 h-4 text-green-600 mr-1" />
-                        <span className="text-sm text-gray-600">Total Value</span>
+                        <span className="text-sm text-slate-400">Total Value</span>
                       </div>
-                      <div className="font-semibold text-gray-900">{project.totalValue}</div>
+                      <div className="font-semibold text-white">{project.totalValue}</div>
                     </div>
                     <div className="text-center">
                       <div className="flex items-center justify-center mb-2">
-                        <Users className="w-4 h-4 text-purple-600 mr-1" />
-                        <span className="text-sm text-gray-600">Investors</span>
+                        <Users className="w-4 h-4 text-purple-400 mr-1" />
+                        <span className="text-sm text-slate-400">Investors</span>
                       </div>
-                      <div className="font-semibold text-gray-900">{project.investors}</div>
+                      <div className="font-semibold text-white">{project.investors}</div>
                     </div>
                   </div>
                   <div className="mb-6">
-                    <h4 className="font-semibold text-gray-900 mb-3">Key Features:</h4>
+                    <h4 className="font-semibold text-white mb-3">Key Features:</h4>
                     <ul className="space-y-2">
                       {project.features.map((f, i) => (
-                        <li key={i} className="flex items-center text-sm text-gray-600">
+                        <li key={i} className="flex items-center text-sm text-slate-400">
                           <CheckCircle className="w-4 h-4 text-green-500 mr-2 flex-shrink-0" />{f}
                         </li>
                       ))}
@@ -132,12 +132,12 @@ export default function PortfolioPage() {
                   </div>
                   <div className="flex justify-between items-center">
                     <Link href={project.link} target="_blank" rel="noopener noreferrer"
-                      className="flex items-center text-blue-600 font-semibold hover:text-blue-700 transition-colors group">
+                      className="flex items-center text-blue-400 font-semibold hover:text-blue-700 transition-colors group">
                       View Project
                       <ExternalLink className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Link>
                     <Link href={`/portfolio/${project.id}`}
-                      className="flex items-center text-gray-600 hover:text-gray-800 transition-colors group">
+                      className="flex items-center text-slate-400 hover:text-gray-800 transition-colors group">
                       More Details
                       <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />
                     </Link>
@@ -150,17 +150,17 @@ export default function PortfolioPage() {
       </section>
 
       {/* Stats */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0e1420]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Overall Project Stats</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Our achievements in real-world asset tokenization.</p>
+            <h2 className="text-4xl font-bold text-white mb-6">Overall Project Stats</h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">Our achievements in real-world asset tokenization.</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-            <div className="text-center"><div className="text-4xl font-bold text-blue-600 mb-2">4</div><div className="text-gray-600">Completed Projects</div></div>
-            <div className="text-center"><div className="text-4xl font-bold text-green-600 mb-2">$1.15M</div><div className="text-gray-600">Total Project Value</div></div>
-            <div className="text-center"><div className="text-4xl font-bold text-purple-600 mb-2">410+</div><div className="text-gray-600">Active Investors</div></div>
-            <div className="text-center"><div className="text-4xl font-bold text-orange-600 mb-2">100%</div><div className="text-gray-600">Success Rate</div></div>
+            <div className="text-center"><div className="text-4xl font-bold text-blue-400 mb-2">4</div><div className="text-slate-400">Completed Projects</div></div>
+            <div className="text-center"><div className="text-4xl font-bold text-green-600 mb-2">$1.15M</div><div className="text-slate-400">Total Project Value</div></div>
+            <div className="text-center"><div className="text-4xl font-bold text-purple-400 mb-2">410+</div><div className="text-slate-400">Active Investors</div></div>
+            <div className="text-center"><div className="text-4xl font-bold text-orange-600 mb-2">100%</div><div className="text-slate-400">Success Rate</div></div>
           </div>
         </div>
       </section>
@@ -173,10 +173,10 @@ export default function PortfolioPage() {
             Our expert team is ready to collaborate on your real-world asset tokenization projects.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
+            <Link href="/contact" className="bg-white text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
               Request New Project
             </Link>
-            <Link href="/services" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+            <Link href="/services" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-400 transition-all duration-300">
               View Services
             </Link>
           </div>

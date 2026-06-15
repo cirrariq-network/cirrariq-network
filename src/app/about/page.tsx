@@ -40,9 +40,9 @@ const technologies = [
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-[#03050f] via-blue-950 to-cyan-950 py-20">
+      <section className="bg-gradient-to-r [#080c14] py-20">
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">About Cirrariq</h1>
@@ -50,10 +50,10 @@ export default function AboutPage() {
               A specialized blockchain team and smart contract developers with 5+ years of experience in real-world asset tokenization.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/portfolio" className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
+              <Link href="/portfolio" className="bg-white text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
                 View Portfolio
               </Link>
-              <Link href="/contact" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+              <Link href="/contact" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-400 transition-all duration-300">
                 Contact Us
               </Link>
             </div>
@@ -62,29 +62,29 @@ export default function AboutPage() {
       </section>
 
       {/* Mission Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0e1420]">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Mission</h2>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <h2 className="text-4xl font-bold text-white mb-6">Our Mission</h2>
+              <p className="text-lg text-slate-400 mb-6 leading-relaxed">
                 At Cirrariq, we believe the future of investment lies in real-world asset tokenization.
                 Our mission is to use blockchain technology and smart contracts to convert any physical asset
                 into a tradeable digital token.
               </p>
-              <p className="text-lg text-gray-600 mb-6 leading-relaxed">
+              <p className="text-lg text-slate-400 mb-6 leading-relaxed">
                 Our team consists of blockchain experts, smart contract developers, and security specialists
                 who collaborate to deliver innovative solutions for real-world asset tokenization.
               </p>
               <div className="space-y-4">
-                <div className="flex items-center gap-2 text-blue-600 font-semibold">
+                <div className="flex items-center gap-2 text-blue-400 font-semibold">
                   <span>View our successful Saffron Token project at</span>
                   <Link href="https://zfrnbon.surge.sh" target="_blank" rel="noopener noreferrer"
                     className="text-yellow-500 hover:text-yellow-600 underline">
                     zfrnbon.surge.sh
                   </Link>
                 </div>
-                <div className="flex items-center gap-2 text-gray-600 text-sm">
+                <div className="flex items-center gap-2 text-slate-400 text-sm">
                   <span>Designed and developed by</span>
                   <Link href="https://miroteam.ir" target="_blank" rel="noopener noreferrer"
                     className="text-blue-500 hover:text-blue-400 underline font-semibold">
@@ -110,11 +110,11 @@ export default function AboutPage() {
       </section>
 
       {/* Values Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-[#0e1420]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Our Values</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-6">Our Values</h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               The principles and values that guide everything we do.
             </p>
           </div>
@@ -124,8 +124,8 @@ export default function AboutPage() {
                 <div className="w-16 h-16 bg-gradient-to-r from-cyan-400 via-blue-500 to-indigo-600 rounded-2xl mx-auto mb-6 flex items-center justify-center">
                   <v.icon className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-4">{v.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{v.description}</p>
+                <h3 className="text-xl font-bold text-white mb-4">{v.title}</h3>
+                <p className="text-slate-400 leading-relaxed">{v.description}</p>
               </div>
             ))}
           </div>
@@ -133,11 +133,11 @@ export default function AboutPage() {
       </section>
 
       {/* Technologies Section */}
-      <section className="py-20 bg-gray-50">
+      <section className="py-20 bg-[#0a0f1a]">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold text-gray-900 mb-6">Technologies We Use</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+            <h2 className="text-4xl font-bold text-white mb-6">Technologies We Use</h2>
+            <p className="text-xl text-slate-400 max-w-3xl mx-auto">
               The technologies powering our projects.
             </p>
           </div>
@@ -145,10 +145,10 @@ export default function AboutPage() {
             {technologies.map((tech, i) => (
               <div key={i} className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-all duration-300">
                 <div className="flex items-center justify-between mb-4">
-                  <h3 className="text-lg font-bold text-gray-900">{tech.name}</h3>
-                  <span className="text-xs bg-blue-100 text-blue-800 px-2 py-1 rounded-full">{tech.level}</span>
+                  <h3 className="text-lg font-bold text-white">{tech.name}</h3>
+                  <span className="text-xs bg-blue-100 text-blue-300 px-2 py-1 rounded-full">{tech.level}</span>
                 </div>
-                <p className="text-gray-600 text-sm">{tech.description}</p>
+                <p className="text-slate-400 text-sm">{tech.description}</p>
               </div>
             ))}
           </div>
@@ -169,10 +169,10 @@ export default function AboutPage() {
             Contact our expert team and kick off your tokenization project.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact" className="bg-white text-blue-600 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
+            <Link href="/contact" className="bg-white text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-gray-100 transition-all duration-300">
               Contact Us
             </Link>
-            <Link href="/portfolio" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300">
+            <Link href="/portfolio" className="border-2 border-white text-white px-8 py-4 rounded-full text-lg font-semibold hover:bg-white hover:text-blue-400 transition-all duration-300">
               View Portfolio
             </Link>
           </div>

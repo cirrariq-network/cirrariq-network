@@ -122,7 +122,7 @@ const bestPractices = [
 
 export default function SolidityPage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Hero Section */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -177,13 +177,13 @@ export default function SolidityPage() {
               {/* Main Content */}
               <div className="lg:col-span-2">
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-6">What Is Solidity?</h2>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <h2 className="text-3xl font-bold text-white mb-6">What Is Solidity?</h2>
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     Solidity is a high-level programming language designed for writing smart contracts. 
                     This language is specifically developed to run on the Ethereum Virtual Machine (EVM) and uses syntax similar to 
                     JavaScript and C++.
                   </p>
-                  <p className="text-lg text-gray-700 mb-6 leading-relaxed">
+                  <p className="text-lg text-slate-300 mb-6 leading-relaxed">
                     Solidity enables the creation of complex and secure contracts that can manage digital assets, 
                     tokens, and decentralized finance systems. This language is widely used in 
                     DeFi, NFT, and real-world asset tokenization projects.
@@ -192,7 +192,7 @@ export default function SolidityPage() {
 
                 {/* Features */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Key Features</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Key Features</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                     {features.map((feature, index) => (
                       <div key={index} className="flex items-start space-x-4 ">
@@ -200,8 +200,8 @@ export default function SolidityPage() {
                           <feature.icon className="w-6 h-6 text-white" />
                         </div>
                         <div>
-                          <h3 className="text-xl font-bold text-gray-900 mb-2">{feature.title}</h3>
-                          <p className="text-gray-600">{feature.description}</p>
+                          <h3 className="text-xl font-bold text-white mb-2">{feature.title}</h3>
+                          <p className="text-slate-400">{feature.description}</p>
                         </div>
                       </div>
                     ))}
@@ -210,10 +210,10 @@ export default function SolidityPage() {
 
                 {/* Code Examples */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg mb-8">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Code Examples</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Code Examples</h2>
                   {codeExamples.map((example, index) => (
                     <div key={index} className="mb-8">
-                      <h3 className="text-xl font-bold text-gray-900 mb-4">{example.title}</h3>
+                      <h3 className="text-xl font-bold text-white mb-4">{example.title}</h3>
                       <div className="bg-gray-900 rounded-xl p-6 overflow-x-auto">
                         <pre className="text-green-400 text-sm leading-relaxed">
                           <code>{example.code}</code>
@@ -225,12 +225,12 @@ export default function SolidityPage() {
 
                 {/* Best Practices */}
                 <div className="bg-white p-8 md:p-12 rounded-3xl shadow-lg">
-                  <h2 className="text-3xl font-bold text-gray-900 mb-8">Best Practices</h2>
+                  <h2 className="text-3xl font-bold text-white mb-8">Best Practices</h2>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     {bestPractices.map((practice, index) => (
                       <div key={index} className="flex items-center space-x-3 ">
                         <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
-                        <span className="text-gray-700">{practice}</span>
+                        <span className="text-slate-300">{practice}</span>
                       </div>
                     ))}
                   </div>
@@ -240,43 +240,43 @@ export default function SolidityPage() {
               {/* Sidebar */}
               <div className="lg:col-span-1">
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">General Info</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">General Info</h3>
                   <div className="space-y-3">
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Current Version:</span>
-                      <span className="font-semibold text-blue-600">0.8.19+</span>
+                      <span className="text-slate-400">Current Version:</span>
+                      <span className="font-semibold text-blue-400">0.8.19+</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Language Type:</span>
-                      <span className="font-semibold text-blue-600">Statically Typed</span>
+                      <span className="text-slate-400">Language Type:</span>
+                      <span className="font-semibold text-blue-400">Statically Typed</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Compatibility:</span>
-                      <span className="font-semibold text-blue-600">EVM</span>
+                      <span className="text-slate-400">Compatibility:</span>
+                      <span className="font-semibold text-blue-400">EVM</span>
                     </div>
                     <div className="flex justify-between">
-                      <span className="text-gray-600">Support:</span>
-                      <span className="font-semibold text-blue-600">Active</span>
+                      <span className="text-slate-400">Support:</span>
+                      <span className="font-semibold text-blue-400">Active</span>
                     </div>
                   </div>
                 </div>
 
                 <div className="bg-white p-6 rounded-2xl shadow-lg mb-6">
-                  <h3 className="text-xl font-bold text-gray-900 mb-4">Useful Resources</h3>
+                  <h3 className="text-xl font-bold text-white mb-4">Useful Resources</h3>
                   <div className="space-y-3">
-                    <a href="https://docs.soliditylang.org/" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                    <a href="https://docs.soliditylang.org/" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-400 hover:text-blue-300 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Official Documentation
                     </a>
-                    <a href="https://remix.ethereum.org/" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                    <a href="https://remix.ethereum.org/" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-400 hover:text-blue-300 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Remix IDE
                     </a>
-                    <a href="https://hardhat.org/" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                    <a href="https://hardhat.org/" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-400 hover:text-blue-300 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       Hardhat Framework
                     </a>
-                    <a href="https://openzeppelin.com/" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-600 hover:text-blue-800 transition-colors">
+                    <a href="https://openzeppelin.com/" target="_blank" rel="noopener noreferrer" className="flex items-center text-blue-400 hover:text-blue-300 transition-colors">
                       <ExternalLink className="w-4 h-4 mr-2" />
                       OpenZeppelin
                     </a>
@@ -288,7 +288,7 @@ export default function SolidityPage() {
                   <p className="text-blue-100 mb-4">
                     Our expert team is ready to help with smart contract development using Solidity
                   </p>
-                  <Link href="/contact" className="inline-flex items-center bg-white text-blue-600 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
+                  <Link href="/contact" className="inline-flex items-center bg-[#0e1420] text-blue-400 px-4 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors">
                     Contact Us
                     <ArrowRight className="w-4 h-4 mr-2" />
                   </Link>

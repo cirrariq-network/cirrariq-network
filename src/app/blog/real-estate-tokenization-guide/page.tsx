@@ -110,7 +110,7 @@ const costs = [
 
 export default function RealEstateTokenizationGuidePage() {
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen bg-[#0a0f1a]">
       {/* Article Header */}
       <section className="relative py-20 overflow-hidden">
         <div className="absolute inset-0">
@@ -162,13 +162,13 @@ export default function RealEstateTokenizationGuidePage() {
           <article className="prose prose-lg max-w-none">
             {/* Introduction */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Introduction</h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <h2 className="text-3xl font-bold text-white mb-6">Introduction</h2>
+              <p className="text-lg text-slate-300 leading-relaxed mb-6">
                 Real estate tokenization is one of the most important use cases of blockchain technology in the real estate world. 
                 This process enables fractional ownership of high-value buildings among multiple investors 
                 and creates high liquidity for illiquid assets.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-slate-300 leading-relaxed">
                 In this comprehensive guide, we review all real estate tokenization steps from start to finish 
                 and also address important notes and potential financial challenges.
               </p>
@@ -176,7 +176,7 @@ export default function RealEstateTokenizationGuidePage() {
 
             {/* Steps */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Real Estate Tokenization Steps</h2>
+              <h2 className="text-3xl font-bold text-white mb-6">Real Estate Tokenization Steps</h2>
               <div className="space-y-8">
                 {steps.map((step, index) => (
                   <div key={index} className="bg-white p-8 rounded-2xl shadow-lg">
@@ -185,13 +185,13 @@ export default function RealEstateTokenizationGuidePage() {
                         {step.step}
                       </div>
                       <div className="flex-1">
-                        <h3 className="text-2xl font-bold text-gray-900 mb-4">{step.title}</h3>
-                        <p className="text-gray-700 mb-4">{step.description}</p>
+                        <h3 className="text-2xl font-bold text-white mb-4">{step.title}</h3>
+                        <p className="text-slate-300 mb-4">{step.description}</p>
                         <ul className="space-y-2">
                           {step.details.map((detail, detailIndex) => (
                             <li key={detailIndex} className="flex items-start">
                               <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-1 flex-shrink-0" />
-                              <span className="text-gray-700">{detail}</span>
+                              <span className="text-slate-300">{detail}</span>
                             </li>
                           ))}
                         </ul>
@@ -204,13 +204,13 @@ export default function RealEstateTokenizationGuidePage() {
 
             {/* Benefits */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Benefits of Real Estate Tokenization</h2>
+              <h2 className="text-3xl font-bold text-white mb-6">Benefits of Real Estate Tokenization</h2>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 {benefits.map((benefit, index) => (
                   <div key={index} className="bg-white p-6 rounded-2xl shadow-lg">
                     <div className="text-4xl mb-4">{benefit.icon}</div>
-                    <h3 className="text-xl font-bold text-gray-900 mb-3">{benefit.title}</h3>
-                    <p className="text-gray-700">{benefit.description}</p>
+                    <h3 className="text-xl font-bold text-white mb-3">{benefit.title}</h3>
+                    <p className="text-slate-300">{benefit.description}</p>
                   </div>
                 ))}
               </div>
@@ -218,23 +218,23 @@ export default function RealEstateTokenizationGuidePage() {
 
             {/* Costs */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Real Estate Tokenization Costs</h2>
+              <h2 className="text-3xl font-bold text-white mb-6">Real Estate Tokenization Costs</h2>
               <div className="bg-white rounded-2xl shadow-lg overflow-hidden">
                 <div className="overflow-x-auto">
                   <table className="w-full">
-                    <thead className="bg-gray-50">
+                    <thead className="bg-[#0a0f1a]">
                       <tr>
-                        <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Item</th>
-                        <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Cost</th>
-                        <th className="px-6 py-4 text-left text-sm font-semibold text-gray-900">Description</th>
+                        <th className="px-6 py-4 text-left text-sm font-semibold text-white">Item</th>
+                        <th className="px-6 py-4 text-left text-sm font-semibold text-white">Cost</th>
+                        <th className="px-6 py-4 text-left text-sm font-semibold text-white">Description</th>
                       </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-200">
                       {costs.map((cost, index) => (
                         <tr key={index}>
-                          <td className="px-6 py-4 text-sm text-gray-900">{cost.item}</td>
-                          <td className="px-6 py-4 text-sm font-semibold text-blue-600">{cost.cost}</td>
-                          <td className="px-6 py-4 text-sm text-gray-700">{cost.description}</td>
+                          <td className="px-6 py-4 text-sm text-white">{cost.item}</td>
+                          <td className="px-6 py-4 text-sm font-semibold text-blue-400">{cost.cost}</td>
+                          <td className="px-6 py-4 text-sm text-slate-300">{cost.description}</td>
                         </tr>
                       ))}
                     </tbody>
@@ -245,13 +245,13 @@ export default function RealEstateTokenizationGuidePage() {
 
             {/* Conclusion */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Conclusion</h2>
-              <p className="text-lg text-gray-700 leading-relaxed mb-6">
+              <h2 className="text-3xl font-bold text-white mb-6">Conclusion</h2>
+              <p className="text-lg text-slate-300 leading-relaxed mb-6">
                 Real estate tokenization is a unique opportunity to democratize investment in real estate. 
                 This technology not only opens up high-value investments to the general public, 
                 but also creates high liquidity for illiquid assets.
               </p>
-              <p className="text-lg text-gray-700 leading-relaxed">
+              <p className="text-lg text-slate-300 leading-relaxed">
                 If you have a property you want to tokenize, or as an investor are looking for 
                 new opportunities in the real estate market, contact our expert team at Cirrariq.
               </p>
@@ -265,13 +265,13 @@ export default function RealEstateTokenizationGuidePage() {
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link 
                 href="/contact"
-                className="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300"
+                className="bg-white text-blue-400 px-8 py-3 rounded-full font-semibold hover:bg-gray-100 transition-all duration-300"
               >
                 Free Consultation
               </Link>
               <Link 
                 href="/services/real-estate"
-                className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition-all duration-300"
+                className="border-2 border-white text-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-400 transition-all duration-300"
               >
                 View Services
               </Link>
